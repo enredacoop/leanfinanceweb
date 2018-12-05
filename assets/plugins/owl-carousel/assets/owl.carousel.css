@@ -63,6 +63,10 @@
   position: relative;
   -ms-touch-action: pan-Y;
 }
+.owl-stage{
+  width: 120%;
+}
+
 .owl-carousel .owl-stage:after {
   content: ".";
   display: block;
