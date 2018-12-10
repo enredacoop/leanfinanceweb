@@ -1721,7 +1721,7 @@ label.control-label {
 
 .c-btn-border-1x.c-btn-white {
   border-color: #FFFFFF;
-  color: #FFFFFF;
+  color: grey;
   background: none;
   border-color: #FFFFFF; }
   .c-btn-border-1x.c-btn-white.c-btn-border-opacity-04 {
@@ -4841,7 +4841,7 @@ label.control-label {
 
 .btn.c-btn-border-1x.c-btn-white,
 .btn.c-btn-border-2x.c-btn-white {
-  border-color: rba(#ffffff, 0.9); }
+  border-color: grey; }
 
 .dropdown-menu {
   border: 0;

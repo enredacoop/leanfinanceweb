@@ -11875,7 +11875,7 @@ h1 {
       margin: 0; }
       .c-content-accordion-1 .panel > .panel-heading > .panel-title > a {
         transition: all 0.2s;
-        color: #fff;
+        color: black;
         display: block;
         padding: 30px 30px 25px 30px;
         border-radius: 0;
@@ -11884,15 +11884,18 @@ h1 {
           margin-right: 5px;
           font-size: 17px; }
         .c-content-accordion-1 .panel > .panel-heading > .panel-title > a.collapsed {
-          background-color: #fff;
-          color: #343a3d; }
+          background-color: #32c5d2;
+          color: #fff; }
           .c-content-accordion-1 .panel > .panel-heading > .panel-title > a.collapsed:hover, .c-content-accordion-1 .panel > .panel-heading > .panel-title > a.collapsed:focus {
-            color: #fff;
+            color: black;
             transition: all 0.2s; }
+           .c-content-accordion-1 .panel > .panel-heading > .panel-title > a.collapsed:after{
+              color: white;
+           } 
   .c-content-accordion-1 .panel > .panel-collapse > .panel-body {
     border-top: none;
     padding: 0px 30px 35px 30px;
-    color: #ffffff; }
+    /*color: #ffffff;*/ }
     .c-content-accordion-1 .panel > .panel-collapse > .panel-body > li{
       margin-left: 30px;
     }
