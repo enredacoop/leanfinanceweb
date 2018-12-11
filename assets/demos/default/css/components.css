@@ -3263,7 +3263,7 @@ h1 {
       .c-layout-header .c-brand > .c-cart-toggler {
         background: none;
         border: 0;
-        margin: 0px 25px 0 0;
+        margin: 10px 10px 0 0;
         padding: 0;
         float: right;
         outline: none;
@@ -7034,78 +7034,7 @@ h1 {
   .c-content-business-line-icon.c-business-icon-xs {
     width: 20px;
     height: 20px; }
-  .c-content-business-line-icon.c-business-icon-1 {
-    background-position: 0px 0%; }
-  .c-content-business-line-icon.c-business-icon-2 {
-    background-position: 0px 100%; }
-  .c-content-business-line-icon.c-business-icon-3 {
-    background-position: 0px 200%; }
-  .c-content-business-line-icon.c-business-icon-4 {
-    background-position: 0px 300%; }
-  .c-content-business-line-icon.c-business-icon-5 {
-    background-position: 0px 400%; }
-  .c-content-business-line-icon.c-business-icon-6 {
-    background-position: 0px 500%; }
-  .c-content-business-line-icon.c-business-icon-7 {
-    background-position: 0px 600%; }
-  .c-content-business-line-icon.c-business-icon-8 {
-    background-position: 0px 700%; }
-  .c-content-business-line-icon.c-business-icon-9 {
-    background-position: 0px 800%; }
-  .c-content-business-line-icon.c-business-icon-10 {
-    background-position: 0px 900%; }
-  .c-content-business-line-icon.c-business-icon-11 {
-    background-position: 0px 1000%; }
-  .c-content-business-line-icon.c-business-icon-12 {
-    background-position: 0px 1100%; }
-  .c-content-business-line-icon.c-business-icon-13 {
-    background-position: 0px 1200%; }
-  .c-content-business-line-icon.c-business-icon-14 {
-    background-position: 0px 1300%; }
-  .c-content-business-line-icon.c-business-icon-15 {
-    background-position: 0px 1400%; }
-  .c-content-business-line-icon.c-business-icon-16 {
-    background-position: 0px 1500%; }
-  .c-content-business-line-icon.c-business-icon-17 {
-    background-position: 0px 1600%; }
-  .c-content-business-line-icon.c-business-icon-18 {
-    background-position: 0px 1700%; }
-  .c-content-business-line-icon.c-business-icon-19 {
-    background-position: 0px 1800%; }
-  .c-content-business-line-icon.c-business-icon-20 {
-    background-position: 0px 1900%; }
-  .c-content-business-line-icon.c-business-icon-21 {
-    background-position: 0px 2000%; }
-  .c-content-business-line-icon.c-business-icon-22 {
-    background-position: 0px 2100%; }
-  .c-content-business-line-icon.c-business-icon-23 {
-    background-position: 0px 2200%; }
-  .c-content-business-line-icon.c-business-icon-24 {
-    background-position: 0px 2300%; }
-  .c-content-business-line-icon.c-business-icon-25 {
-    background-position: 0px 2400%; }
-  .c-content-business-line-icon.c-business-icon-26 {
-    background-position: 0px 2500%; }
-  .c-content-business-line-icon.c-business-icon-27 {
-    background-position: 0px 2600%; }
-  .c-content-business-line-icon.c-business-icon-28 {
-    background-position: 0px 2700%; }
-  .c-content-business-line-icon.c-business-icon-29 {
-    background-position: 0px 2800%; }
-  .c-content-business-line-icon.c-business-icon-30 {
-    background-position: 0px 2900%; }
-  .c-content-business-line-icon.c-business-icon-31 {
-    background-position: 0px 3000%; }
-  .c-content-business-line-icon.c-business-icon-32 {
-    background-position: 0px 3100%; }
-  .c-content-business-line-icon.c-business-icon-33 {
-    background-position: 0px 3200%; }
-  .c-content-business-line-icon.c-business-icon-34 {
-    background-position: 0px 3300%; }
-  .c-content-business-line-icon.c-business-icon-35 {
-    background-position: 0px 3400%; }
-  .c-content-business-line-icon.c-business-icon-36 {
-    background-position: 0px 3500%; }
+
 
 .c-content-v-center .c-wrapper {
   width: 100%;
@@ -9366,7 +9295,9 @@ h1 {
       .c-content-product-1 .row .c-body > .btn {
         display: block;
         margin: 0 auto 60px auto;
-        clear: both; }
+        clear: both;
+        width: 250px; 
+      }
 
 @media (max-width: 991px) {
   /* 991px */

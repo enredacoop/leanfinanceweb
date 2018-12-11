@@ -3150,6 +3150,12 @@ h1 {
     .c-layout-header .c-quick-search > span:hover {
       cursor: pointer; }
 
+
+  .c-mobile-logo{
+    max-height: 60px;
+    margin: 5px;
+  }
+
 @media (min-width: 992px) {
   /* 992px */
   .c-layout-header.c-no-border {
@@ -3240,7 +3246,7 @@ h1 {
     .c-layout-header .c-brand {
       float: none !important;
       display: block;
-      margin: 20px 15px 21px 15px; }
+      }
       .c-layout-header .c-brand .c-desktop-logo-inverse {
         display: none; }
       .c-layout-header .c-brand > .c-hor-nav-toggler {
@@ -3264,7 +3270,7 @@ h1 {
       .c-layout-header .c-brand > .c-cart-toggler {
         background: none;
         border: 0;
-        margin: 0px 25px 0 0;
+        margin: 10px 10px 0 0;
         padding: 0;
         float: right;
         outline: none;
@@ -4103,7 +4109,8 @@ h1 {
       top: -1px;
       display: inline-block;
       background: #2e333a;
-      padding: 5px 8px 6px 8px; }
+      padding: 5px 8px 6px 8px;
+      margin: 10px; }
       .c-layout-header.c-layout-header-dark-mobile .c-brand > .c-hor-nav-toggler > .c-line {
         background: #8e99a6; }
       .c-layout-header.c-layout-header-dark-mobile .c-brand > .c-hor-nav-toggler:hover {
