@@ -858,6 +858,22 @@ img.tp-slider-alternative-image	{
 	box-sizing: border-box;
 	cursor: pointer;
 }
+@media (max-device-width: 799px) {
+	#slide-16-layer-1{
+		display: none;
+		/*visibility: hidden;*/
+	}
+	#slide-16-layer-1-mobile{
+		/*display: contents;*/
+		font-size: 5em;
+	}
+}
+@media (min-device-width: 799px) {
+	
+	#slide-16-layer-1-mobile{
+		display: none;
+	}
+}
 
 .rev-cbutton-dark-sr	{	
 	border-radius: 3px;		

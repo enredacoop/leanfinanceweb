@@ -305,6 +305,17 @@ label.control-label {
   .c-btn-uppercase.btn-xs {
     padding: 2px 8px 0px 8px; }
 
+@media (max-device-width: 799px) {
+  .tp-caption.tp-resizeme.rs-parallaxlevel-5, .tp-caption.tp-resizeme.rs-parallaxlevel-10{
+    display: none;
+    /*visibility: hidden;*/
+  } 
+  #rs-parallaxlevel-5-mobile{
+    /*display: contents;*/
+    font-size: 5em;
+  }
+}
+
 .btn-default {
   color: #99a5b9;
   background: #ffffff;
