@@ -602,6 +602,10 @@ h1 {
 .c-line-height-40 {
   line-height: 40px; }
 
+.c-font-underline:hover{
+  text-decoration: underline;
+}
+
 /* Font Colors */
 .c-font-white {
   color: #FFFFFF !important; }
@@ -3212,6 +3216,10 @@ h1 {
     .c-page-on-scroll.c-layout-header-fixed .c-layout-header .c-mega-menu {
       line-height: 0px; 
      }
+      .c-page-on-scroll.c-layout-header-fixed .c-layout-header .c-mega-menu .nav.navbar-nav > li > form  {
+        transition: all 0.2s;
+        padding: 11px 15px 21px 15px;
+        min-height: 65px; }
       .c-page-on-scroll.c-layout-header-fixed .c-layout-header .c-mega-menu .nav.navbar-nav > li > .c-link {
         transition: all 0.2s;
         padding: 23px 15px 21px 15px;
@@ -3355,6 +3363,11 @@ h1 {
           font-size: 17px; }
           .c-layout-header .c-navbar .c-mega-menu > .nav.navbar-nav > li > .c-link:hover, .c-layout-header .c-navbar .c-mega-menu > .nav.navbar-nav > li > .c-link:focus {
             background: none; }
+        .c-layout-header .c-navbar .c-mega-menu > .nav.navbar-nav > li > form{
+          transition: all 0.2s;
+          padding: 31px 15px 39px 15px;
+          min-height: 100px;
+        } 
         .c-layout-header .c-navbar .c-mega-menu > .nav.navbar-nav > li > .c-quick-sidebar-toggler {
           transition: all 0.2s;
           display: inline-block;
@@ -5089,7 +5102,7 @@ h1 {
     padding: 40px; }
   .c-layout-revo-slider-4 .c-main-title-circle {
     background: rgba(0, 0, 0, 0.05);
-    padding: 380px 260px 380px 260px;
+    padding: 380px 260px 380px 10px;
     letter-spacing: 1px;
     line-height: 68px;
     border-radius: 600px; }
