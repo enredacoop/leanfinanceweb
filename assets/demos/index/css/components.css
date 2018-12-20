@@ -9273,12 +9273,14 @@ h1 {
             text-transform: uppercase; }
           .c-content-product-1 .row .c-body > .c-row > li > p {
             color: #5c6873;
-            font-weight: 300; }
+            font-weight: 300;
+            font-family: "Roboto Condensed"; 
+          }
       .c-content-product-1 .row .c-body > .btn {
         display: block;
         margin: 0 auto 60px auto;
         clear: both; 
-        width: 250px;
+        width: 300px;
       }
 
 @media (max-width: 991px) {
