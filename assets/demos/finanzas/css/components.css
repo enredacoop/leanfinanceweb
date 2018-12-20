@@ -7989,6 +7989,10 @@ h1 {
     .c-content-pricing-1 > .c-tile-container > .c-tile-small {
       margin: 40px 0;
       padding: 50px 0; }
+    .c-content-pricing-1 > .c-tile-container > .c-tile-center {
+      margin: 40px 20px;
+      padding: 50px 20px; 
+    }
   .c-content-pricing-1.c-option-2 > .c-tile-container > .c-tile > .c-label {
     color: #ffffff; }
   .c-content-pricing-1.c-option-2 > .c-tile-container > .c-tile.c-highlight {
