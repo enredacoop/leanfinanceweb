@@ -5065,7 +5065,15 @@ h1 {
     padding: 7px 22px 5px 22px;
     font-size: 14px; } }
 
-
+@media (max-width: 767px) {
+  /* 767px */
+  .c-layout-revo-slider-3 .c-main-title-1 {
+    padding: 10px;
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 70px; }
+  .c-layout-revo-slider-3 .c-action-btn {
+    margin-top: 50px; } }
 
 .c-layout-revo-slider-4 {
   min-height: 500px; }
@@ -5088,7 +5096,6 @@ h1 {
     padding: 300px 300px;
     letter-spacing: 1px;
     line-height: 68px; }
-
 
 @media (max-width: 991px) {
   /* 991px */
