@@ -5152,9 +5152,10 @@ h1 {
     font-size: 20px;
     line-height: 24px; }
   .c-layout-revo-slider-6 .c-sub-title {
-    padding: 15px 20px;
+    padding: 15px 30px;
     line-height: 22px;
-    font-size: 13px; }
+    font-size: 8.5px;
+    margin-left: 20px; }
   .c-layout-revo-slider-6 .c-action-btn.btn,
   .c-layout-revo-slider-6 .c-action-btn.btn.c-btn-border-2x.c-btn-uppercase.btn-lg {
     padding: 7px 22px 5px 22px;
