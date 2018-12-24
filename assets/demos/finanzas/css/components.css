@@ -5106,7 +5106,7 @@ h1 {
 @media (max-width: 380px) {
   /*.c-layout-revo-slider-15 {
     min-height: 215px; }*/
- .tp-caption.tp-resizeme .rs-parallaxlevel-5, .c-layout-revo-slider-15 .tp-parallax-wrap .tp-mask-wrap .rs-parallaxlevel-10{
+ .tp-caption.tp-resizeme .rs-parallaxlevel-5, .c-layout-revo-slider-15 .tp-loop-wrap .tp-mask-wrap .rs-parallaxlevel-10{
     display: none;
     /*visibility: hidden;*/
   }
@@ -5115,10 +5115,10 @@ h1 {
     height: auto;
     display: none;
    } 
-  .titulo{
-    /*display: none;*/
-   display: contents;
-    /*font-size: 5em;*/
+  .c-layout-revo-slider-15 .tp-parallax-wrap .tp-mask-wrap .titulo{
+    /*display: none;
+   display: contents;*/
+    font-size: 5em;
   } 
   }
 
