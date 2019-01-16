@@ -1,0 +1,42 @@
+/************************************************************
+* 
+* Header
+*
+/************************************************************/
+@media only screen and (max-width: 991px) {
+  h3.c-main-title {
+    font-size: 20px;
+    margin: 0 auto;
+    display: block;
+  }
+
+}
+.c-button-resaltado {
+  background: #32c5d2;
+  padding: 5px 10px;
+  color: white;
+}
+
+.c-enisa-subtitle {
+  background: white;
+  color: #4f5054 !important;
+  padding: 15px;
+  margin-top: 40px;
+}
+.c-caption-image {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.c-container-consultoria {
+	padding: 80px 0px;
+  background-color: rgba(0, 0, 0, 0);
+  background-repeat: no-repeat;
+  background-image: url(../../../base/img/content/backgrounds/bg-19.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+}
+.c-content-box-consultoria {
+	padding-top: 0px !important;
+}	
