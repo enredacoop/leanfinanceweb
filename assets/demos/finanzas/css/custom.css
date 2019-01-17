@@ -3,14 +3,27 @@
 * Header
 *
 /************************************************************/
+.c-main-title {
+  display: table;
+    position: relative;
+    vertical-align: middle;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1135px;
+}
+  .c-main-title > span {
+    display: table-cell;
+    vertical-align: middle;
+  }
 @media only screen and (max-width: 991px) {
   h3.c-main-title {
-    font-size: 20px;
-    margin: 0 auto;
-    display: block;
+    font-size: 40px !important;
+    line-height: 1.1 !important;
+    margin: 0 15px;
   }
-
 }
+
 @media (max-width: 991px) {
 	.c-layout-revo-slider-6 .c-main-title {
 	  margin-top: -80px;
@@ -82,4 +95,14 @@
 .c-packs-description {
   margin: 15px 30px;
   text-align: left;
+  height: 215px;
+}
+@media only screen and (max-width: 991px) {
+  .c-packs-description {
+    height: initial;
+  }
+}
+
+.pt-0 {
+  padding-top: 0px !important;
 }

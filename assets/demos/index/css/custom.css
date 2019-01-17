@@ -3,11 +3,24 @@
 * Header
 *
 /************************************************************/
+.c-main-title {
+  display: table;
+    position: relative;
+    vertical-align: middle;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1135px;
+}
+  .c-main-title > span {
+    display: table-cell;
+    vertical-align: middle;
+  }
 @media only screen and (max-width: 991px) {
   h3.c-main-title {
-    font-size: 20px;
-    margin: 0 auto;
-    display: block;
+    font-size: 40px !important;
+    line-height: 1.1 !important;
+    margin: 0 15px;
   }
 }
 
@@ -25,6 +38,12 @@
 .c-packs-description {
   margin: 15px 30px;
   text-align: left;
+  height: 240px;
+}
+@media only screen and (max-width: 991px) {
+  .c-packs-description {
+    height: initial;
+  }
 }
 
 /************************************************************
@@ -66,6 +85,8 @@
   text-align: center;
   z-index: 9999;
   box-shadow: 0px 0px 13px rgba(0,0,0,.66);
+  bottom: 0px;
+  width: 100%;
 }
 
 .cc-color-override--1680425298 .cc-link, .cc-color-override--1680425298 .cc-link:active, .cc-color-override--1680425298 .cc-link:visited {
