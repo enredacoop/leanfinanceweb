@@ -18,7 +18,7 @@
   }
 @media only screen and (max-width: 991px) {
   h3.c-main-title {
-    font-size: 40px !important;
+    font-size: 25px !important;
     line-height: 1.1 !important;
     margin: 0 15px;
   }
@@ -120,4 +120,22 @@
 .cc-compliance {
   display: inline-block;
   margin-left: 30px;
+}
+
+
+/************************************************************
+* 
+* Alert
+*
+/************************************************************/
+#alert-ok .close {
+  top: -22px;
+}
+.d-none {
+  display: none;
+}
+
+label {
+  font-size: 15px;
+  font-weight: initial;
 }

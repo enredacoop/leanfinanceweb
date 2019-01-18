@@ -11848,7 +11848,9 @@ h1 {
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 30px;
-    color: #343a3d; }
+    color: #343a3d;
+    height: 50px;
+   }
   .c-content-services-6 .c-content-services-6-item .c-content-services-6-item-desc {
     font-weight: 300;
     color: #7c8387;
