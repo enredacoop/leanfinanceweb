@@ -57,12 +57,7 @@ function sendEmailAndDownload() {
 	emailjs.send(service_id, template_id, template_params, "user_0t6pKfOxfc5URBHNxCPaU")
 		.then(function(response) {
       $("#alert-download-ok").removeClass("d-none");
-
-      var ajaxOptions = {
-    		url: 'descargas/' + download_file
-      };
-      $.ajax(ajaxOptions);
-
+      document.getElementById("download-file-start").src = 'descargas/' + download_file;
 			document.getElementById("form-download-leanfinance").reset();
     }, function(error) {
       $("#alert-download-ko").removeClass("d-none");
