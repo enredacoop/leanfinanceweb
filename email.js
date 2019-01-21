@@ -29,7 +29,6 @@ function sendEmail() {
     }, function(error) {
        /*console.log('FAILED...', error);*/
       $("#alert-ko").removeClass("d-none");
-			document.getElementById("form-leanfinance").reset();
     });
 }
 
@@ -61,6 +60,5 @@ function sendEmailAndDownload() {
 			document.getElementById("form-download-leanfinance").reset();
     }, function(error) {
       $("#alert-download-ko").removeClass("d-none");
-			document.getElementById("form-download-leanfinance").reset();
     });
 }
