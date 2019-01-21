@@ -8,3 +8,22 @@
   padding: 5px 10px;
   color: white;
 }
+
+
+/************************************************************
+* 
+* Header
+*
+/************************************************************/
+.art-bd-img {
+	width: 100%;
+	max-height: 320px;
+	object-fit: cover;
+}
+.c-date {
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
+.c-content-blog-post-card-1 .c-title {
+  height: 60px;
+}
