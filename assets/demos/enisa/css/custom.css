@@ -82,3 +82,33 @@ label {
   font-size: 15px;
   font-weight: initial;
 }
+
+
+/************************************************************
+* 
+* Documents
+*
+/************************************************************/
+a > .icon-download {
+  width: 67px;
+  height: 67px;
+  border-radius: 33.5px;
+  text-align: center;
+  padding: 20px;
+
+  background: #E2E2E2;
+}
+  a:hover > .icon-download {
+    background: #32c5d2;
+    color: white;
+  }
+  .icon-download.left {
+    float: left;
+  }
+  .icon-download.right {
+    float: right;
+  }
+.form-modal {
+  float: none;
+  margin: 0 auto;
+}
