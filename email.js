@@ -24,11 +24,11 @@ function sendEmail() {
 	emailjs.send(service_id, template_id, template_params, "user_0t6pKfOxfc5URBHNxCPaU")
 		.then(function(response) {
        /*console.log('SUCCESS!', response.status, response.text);*/
-       $("#alert-ok").removeClass("d-none");
+      $("#alert-ok").removeClass("d-none");
 			document.getElementById("form-leanfinance").reset();
     }, function(error) {
        /*console.log('FAILED...', error);*/
-       $("#alert-ko").removeClass("d-none");
+      $("#alert-ko").removeClass("d-none");
 			document.getElementById("form-leanfinance").reset();
     });
 }
@@ -56,20 +56,16 @@ function sendEmailAndDownload() {
 	emailjs.init("user_0t6pKfOxfc5URBHNxCPaU");
 	emailjs.send(service_id, template_id, template_params, "user_0t6pKfOxfc5URBHNxCPaU")
 		.then(function(response) {
-       /*console.log('SUCCESS!', response.status, response.text);*/
-       $("#alert-download-ok").removeClass("d-none");
+      $("#alert-download-ok").removeClass("d-none");
+
+      var ajaxOptions = {
+    		url: 'descargas/' + download_file
+      };
+      $.ajax(ajaxOptions);
+
 			document.getElementById("form-download-leanfinance").reset();
     }, function(error) {
-       /*console.log('FAILED...', error);*/
-       $("#alert-download-ko").removeClass("d-none");
-       //location.href = 'docs/descarga/' + download_file;
-
-       var ajaxOptions = {
-    		url: 'descargas/' + download_file
-        };
-        $.ajax(ajaxOptions);
-
-
+      $("#alert-download-ko").removeClass("d-none");
 			document.getElementById("form-download-leanfinance").reset();
     });
 }
