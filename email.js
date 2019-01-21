@@ -34,7 +34,7 @@ function sendEmail() {
 }
 
 function sendEmailAndDownload() {
-	email = $("#form-email").val();
+	email = $("#form-download-email").val();
 	download = $('input#form-download').val();
 	download_file = "";
 	switch(download){
