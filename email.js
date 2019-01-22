@@ -1,6 +1,8 @@
 $(function(){
 	$(".download-link").on('click', function(){
 		$("input#form-download").val( this.getAttribute("data-download") );
+		$("#alert-download-ok").addClass("d-none");
+		$("#alert-download-ko").addClass("d-none");
 	});
 });
 
@@ -20,7 +22,6 @@ function sendEmail() {
 	var service_id = "default_service";
 	var template_id = "plantilla_contacto";
 
-	emailjs.init("user_0t6pKfOxfc5URBHNxCPaU");
 	emailjs.send(service_id, template_id, template_params, "user_0t6pKfOxfc5URBHNxCPaU")
 		.then(function(response) {
        /*console.log('SUCCESS!', response.status, response.text);*/
@@ -37,10 +38,10 @@ function sendEmailAndDownload() {
 	download = $('input#form-download').val();
 	download_file = "";
 	switch(download){
-		case "1" : download_file = "CALCULADORA_GASTOS_FINANCIEROS.xlsx"; break;
+		case "1" : download_file = "CALCULADORA_GASTOS_ FINANCIEROS.xlsx"; break;
 		case "2" : download_file = "cap_table.xlsx"; break;
 		case "3" : download_file = "Investor_Deck.pptx"; break;
-		case "4" : download_file = "Proyecciones_2018-2022.xlsx"; break;
+		case "4" : download_file = "Proyecciones_2018-2022.xls"; break;
 	}
 	body = "<strong>" + email + "</strong> ha descargado el archivo <strong>" + download_file + "</strong>";
 
@@ -52,7 +53,6 @@ function sendEmailAndDownload() {
 	var service_id = "default_service";
 	var template_id = "plantilla_descarga";
 
-	emailjs.init("user_0t6pKfOxfc5URBHNxCPaU");
 	emailjs.send(service_id, template_id, template_params, "user_0t6pKfOxfc5URBHNxCPaU")
 		.then(function(response) {
       $("#alert-download-ok").removeClass("d-none");

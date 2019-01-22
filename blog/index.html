@@ -103,6 +103,9 @@ Follow: http://www.twitter.com/themehats
 								<a href="#home" class="c-link">Blog</a>
 							</li>
 							<li class="c-onepage-link ">
+								<a href="../contenidos" class="c-link">Contenidos</a>
+							</li>
+							<li class="c-onepage-link ">
 								<a href="#contacto" class="c-link"><span class="c-button-resaltado">Contacto</span></a>
 							</li>
 						</ul>
@@ -194,7 +197,7 @@ Follow: http://www.twitter.com/themehats
             </div>
             <div class="row">
                 <div class="col-sm-12 col-md-6">
-                    <div class="c-container c-bg-white c-bg-img-bottom-right" style="background-image:url(../assets/base/img/content/misc/feedback_box_3.png)">
+                    <!--div class="c-container c-bg-white c-bg-img-bottom-right" style="background-image:url(../assets/base/img/content/misc/feedback_box_3.png)">
                         <div class="c-content-title-1">
                             <h3 class="c-font-uppercase c-font-bold">¿Necesitas saber más?</h3>
                             <div class="c-line-left"></div>
@@ -216,28 +219,41 @@ Follow: http://www.twitter.com/themehats
                             </form>
                             <p class="c-font-lowercase">¡Pregúntanos aquí!</p>
                         </div>
-                    </div>
+                    </div-->
                 </div>
                 <div class="col-sm-12 col-md-6">
-                    <div class="c-contact">
+                   <div class="c-contact">
                         <div class="c-content-title-1">
                             <h3 class="c-font-uppercase c-font-bold">CONTACTO</h3>
                             <div class="c-line-left"></div>
-                            <p class="c-font-lowercase">En nombre de la empresa tratamos la información que nos facilita con el fin de enviarle publicidad relacionada con nuestros productos y servicios por cualquier medio (postal, email o teléfono) e invitarle a eventos organizados por la empresa. Los datos proporcionados se conservarán mientras no solicite el cese de la actividad. Los datos no se cederán a terceros salvo en los casos en que exista una obligación legal. Usted tiene derecho a obtener confirmación sobre si en LEAN FINANCE, S.L.U. estamos tratando sus datos personales, por tanto tiene derecho a acceder a sus datos personales, rectificar los datos inexactos o solicitar su supresión cuando los datos ya no sean necesarios para los fines que fueron recogidos</p>
                         </div>
-                        <form action="#">
+												<div id="alert-ko" class="alert alert-danger alert-dismissible d-none" role="alert">
+													No se ha podido enviar el formulario de contacto en estos momentos. Por favor, inténtelo más tarde. Disculpe las molestias.
+													<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+												</div>
+                    		<div id="alert-ok" class="alert alert-success alert-dismissible d-none" role="alert">
+													Se ha enviado el formulario de contacto correctamente. Le responderemos lo antes posible. Gracias.
+													<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+												</div>
+                        <form id="form-leanfinance" action="#contacto" onsubmit="sendEmail()">
                             <div class="form-group">
-                                <input type="text" placeholder="Escribe tu nombre" class="form-control c-square c-theme input-lg">
+                                <input type="text" id="form-name" placeholder="Escribe tu nombre" class="form-control c-square c-theme input-lg" required>
                             </div>
                             <div class="form-group">
-                                <input type="text" placeholder="Escribe tu email" class="form-control c-square c-theme input-lg">
+                                <input type="email" id="form-email" placeholder="Escribe tu email" class="form-control c-square c-theme input-lg" required>
                             </div>
                             <div class="form-group">
-                                <input type="text" placeholder="Escribe tu teléfono" class="form-control c-square c-theme input-lg">
+                                <input type="text" id="form-phone" placeholder="Escribe tu teléfono" class="form-control c-square c-theme input-lg" required>
                             </div>
                             <div class="form-group">
-                                <textarea rows="8" name="message" placeholder="Motivo de consulta..." class="form-control c-theme c-square input-lg"></textarea>
+                                <textarea rows="8" id="form-message" placeholder="Motivo de consulta..." class="form-control c-theme c-square input-lg" required></textarea>
                             </div>
+                            <div class="form-group">
+	                            <div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input" id="form-check" required>
+																<label class="custom-control-label" for="form-check">Confirmo que acepto y he leído el <a href="#contacto" data-toggle="modal" data-target="#aviso_legal" target="_blank">aviso legal</a>.</label>
+															</div>
+														</div>
                             <button type="submit" class="btn btn-md c-btn-square c-btn-border-2x c-btn-regular c-btn-uppercase c-btn-bold">Enviar</button> 
                         </form>
                     </div>
@@ -265,6 +281,32 @@ Follow: http://www.twitter.com/themehats
 <script src="../assets/plugins/reveal-animate/wow.js" type="text/javascript" ></script>
 <script src="../assets/demos/Blog/js/scripts/reveal-animate/reveal-animate.js" type="text/javascript" ></script>
 
+<script src="../assets/plugins/revo-slider/js/jquery.themepunch.tools.min.js" type="text/javascript"></script>
+<script src="../assets/plugins/revo-slider/js/jquery.themepunch.revolution.min.js" type="text/javascript"></script>
+<script src="../assets/plugins/revo-slider/js/extensions/revolution.extension.slideanims.min.js" type="text/javascript"></script>
+<script src="../assets/plugins/revo-slider/js/extensions/revolution.extension.layeranimation.min.js" type="text/javascript"></script>
+<script src="../assets/plugins/revo-slider/js/extensions/revolution.extension.navigation.min.js" type="text/javascript"></script>
+<script src="../assets/plugins/revo-slider/js/extensions/revolution.extension.video.min.js" type="text/javascript"></script>
+<script src="../assets/plugins/revo-slider/js/extensions/revolution.extension.parallax.min.js" type="text/javascript"></script>
+<script src="../assets/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js" type="text/javascript"></script>
+<script src="../assets/plugins/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
+<script src="../assets/plugins/counterup/jquery.waypoints.min.js" type="text/javascript"></script>
+<script src="../assets/plugins/counterup/jquery.counterup.min.js" type="text/javascript"></script>
+<script src="../assets/plugins/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+<script src="../assets/plugins/smooth-scroll/jquery.smooth-scroll.js" type="text/javascript"></script>
+<script src="../assets/plugins/typed/typed.min.js" type="text/javascript"></script>
+<script src="../assets/plugins/slider-for-bootstrap/js/bootstrap-slider.js" type="text/javascript"></script>
+<script src="../assets/plugins/js-cookie/js.cookie.js" type="text/javascript"></script>
+<!-- BEGIN: THEME SCRIPTS -->
+<script src="../assets/base/js/components.js" type="text/javascript"></script>
+<script src="../assets/base/js/components-shop.js" type="text/javascript"></script>
+<script src="../assets/base/js/app.js" type="text/javascript"></script>
+<script>
+	$(document).ready(function() {    
+		App.init(); // init core    
+	});
+</script>
+
 <!-- END: CORE PLUGINS -->
 <script>
     $("a").on('click', function(){
@@ -280,7 +322,7 @@ Follow: http://www.twitter.com/themehats
   $(function () {
 		var $content = $('#jsonContent');
 		var data = {
-			rss_url: 'http://medium.com/feed/@carlos..campos'
+			rss_url: 'http://medium.com/feed/@jdeseg'
 		};
 		$.get('https://api.rss2json.com/v1/api.json', data, function (response) {
 			if (response.status == 'ok') {
@@ -322,6 +364,88 @@ Follow: http://www.twitter.com/themehats
 	});			
 </script>
 <!--END: Script para blog-->
+
+
+<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init("user_0t6pKfOxfc5URBHNxCPaU");
+    })();
+  </script>
+<script type="text/javascript" src="../email.js"></script>
+
+	<div id="aviso_legal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content c-square">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<h4 class="modal-title" id="myLargeModalLabel">Aviso Legal, Política de privacidad y Política de cookies</h4>
+				</div>
+				<div class="modal-body">
+					<h4>Responsable del tratamiento.</h4>
+					<p>
+						Lean Finance, S.L.U.<br>
+						Avenida República Argentina, 25, Planta 9, 41011, Sevilla, España.<br>
+						Teléfono: 688 92 01 82<br>
+						Email: javier@leanfinance.es<br>
+					</p>
+					<br>
+
+					<h4>Finalidad del tratamiento.</h4> 
+					<p>
+						Mantener la relación comercial establecida, así como la de mantenerle informado mediante comunicaciones comerciales electrónicas sobre nuestros servicios.
+					</p>
+					<br>
+
+					<h4>Plazo de conservación.</h4>
+					<p>
+						Por un lado la información contable y fiscal será mantenida durante los plazos requeridos para cumplimiento de obligaciones legales. En relación con el envío de publicidad podremos conservar dicha información y remitirle publicidad mientras no se oponga a ello.
+					</p>
+					<br>
+
+					<h4>Legitimación.</h4>
+					<p>
+						Existencia de una relación contractual, interés legítimo y consentimiento, según cada finalidad y posible cesión.
+					</p>
+					<br>
+
+					<h4>Destinatarios de los datos.</h4>
+					<p>
+						Los datos podrán ser cedidos o comunicados, en su caso, a entidades bancarias para la realización de cobros o pagos, así como a requerimiento de Administraciones Públicas, Juzgados o Tribunales.
+					</p>
+					<br>
+
+					<h4>Derechos.</h4>
+					<p>
+						Ud. podrá ejercitar los derechos de Acceso, Rectificación, Cancelación, Portabilidad, Supresión o, en su caso, Oposición. Para ejercitar los derechos deberá presentar un escrito en la dirección arriba señalada.
+						<br>
+						Deberá especificar cuál de estos derechos solicita sea satisfecho y, a su vez, deberá acompañarse de la fotocopia del DNI o documento identificativo equivalente. En caso de que actuara mediante representante, legal o voluntario, deberá aportar también documento que acredite la representación y documento identificativo del mismo.
+						<br>
+						Asimismo, podrá ejercer su derecho a la protección de datos personales, interponiendo reclamación ante la Agencia Española de Protección de Datos (www.agpd.es)
+					</p>
+					<br>
+
+					<h4>Acerca de la utilización de las “cookies”.</h4>
+					<p>
+						Las “cookies” son pequeños archivos de texto enviados y almacenados en los ordenadores de los usuarios que permiten a la página Web reconocer a los usuarios repetidos, facilitar acceso a la página y permitir recopilar información para mejorar el contenido.
+						<br>
+						Las “cookies” utilizadas por LEAN FINANCE, S.L.U. no proporcionan datos personales de los usuarios, ni pueden asociarse a una persona. Si el usuario no quiere que las “cookies” sean accesibles en esta página web, puede desactivar de su ordenador la instalación de “cookies” mediante la configuración personal de su navegador. Para más información, consulte la ayuda de su navegador.
+					</p>
+					<br>
+
+					<h4>Formulario de contacto.</h4>
+					<p>
+						En nombre de la empresa tratamos la información que nos facilita con el fin de enviarle publicidad relacionada con nuestros productos y servicios por cualquier medio (postal, email o teléfono) e invitarle a eventos organizados por la empresa. Los datos proporcionados se conservarán mientras no solicite el cese de la actividad. Los datos no se cederán a terceros salvo en los casos en que exista una obligación legal. Usted tiene derecho a obtener confirmación sobre si en LEAN FINANCE, S.L.U. estamos tratando sus datos personales, por tanto tiene derecho a acceder a sus datos personales, rectificar los datos inexactos o solicitar su supresión cuando los datos ya no sean necesarios para los fines que fueron recogidos.
+					</p>
+					<br>
+
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+
 <!-- END: LAYOUT/BASE/BOTTOM -->
 </body>
 </html>

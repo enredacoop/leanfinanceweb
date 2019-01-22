@@ -27,3 +27,20 @@
 .c-content-blog-post-card-1 .c-title {
   height: 60px;
 }
+
+/************************************************************
+* 
+* Alert
+*
+/************************************************************/
+#alert-ok .close {
+  top: -22px;
+}
+.d-none {
+  display: none;
+}
+
+label {
+  font-size: 15px;
+  font-weight: initial;
+}
