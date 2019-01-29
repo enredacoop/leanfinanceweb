@@ -12991,3 +12991,85 @@ h1 {
   .c-content-services-6 .c-content-services-6-item .c-content-services-6-item-desc {
     font-weight: 300;
     color: #7c8387; }
+
+
+.footer{
+    background-color: #6c6e6c;
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+.footer a {
+    display: block;
+    background: url(../images/arrow.png) no-repeat scroll left 5px;
+    padding-left: 15px;
+}
+
+.footer a:hover,
+.footer a:focus {
+    color: #06d0d8;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.footer .logo {
+    display: block;
+    float: left;
+    margin: 6px 10px 25px 0;
+    text-align: center;
+}
+
+.footer .title {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer .text {
+    display: block;
+    padding-bottom: 20px;
+}
+
+.footer .text:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.footer ul.social-icons {
+    margin: 10px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer ul.social-icons li {
+    float: left;
+}
+
+.footer ul.social-icons li a {
+    background: url(../../../base/img/content/RRSSicons/social-icon.png) no-repeat scroll center center #ffffff;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 10px 20px 0;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+}
+.footer ul.social-icons li a.linkedin-icon {
+    background-position: -85px -8px;
+}
+
+.footer ul.social-icons li a.linkedin-icon:hover {
+    background-position: -85px -61px;
+    background-color: #0077b5;
+}
+.footer ul.social-icons li a span {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    z-index: 1;
+}
