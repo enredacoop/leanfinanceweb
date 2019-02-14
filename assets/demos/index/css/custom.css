@@ -1,1 +1,191 @@
-.c-main-title{display:table;position:relative;vertical-align:middle;height:100%;margin:0 auto;text-align:center;max-width:1135px}.c-main-title>span{display:table-cell;vertical-align:middle}@media only screen and (max-width:991px){h3.c-main-title{font-size:25px!important;line-height:1.1!important;margin:0 15px}}.c-button-resaltado{background:#32c5d2;padding:5px 10px;color:#fff}.c-search-toggler *,.nav.navbar-nav.c-theme-nav-right *{display:none!important}.c-packs-description{margin:15px 30px;text-align:left;height:240px}@media only screen and (max-width:991px){.c-packs-description{height:auto}}.cc-window{opacity:1;transition:opacity 1s ease}.cc-window.cc-invisible{opacity:0}.cc-animate.cc-revoke{transition:transform 1s ease}.cc-animate.cc-revoke.cc-top{transform:translateY(-2em)}.cc-animate.cc-revoke.cc-bottom{transform:translateY(2em)}.cc-animate.cc-revoke.cc-active.cc-bottom,.cc-animate.cc-revoke.cc-active.cc-top,.cc-revoke:hover{transform:translateY(0)}.cc-grower{max-height:0;overflow:hidden;transition:max-height 1s}.cc-color-override--1680425298.cc-window{background-color:rgba(0,0,0,.8)!important;color:#fff}.cc-banner.cc-bottom{bottom:0;left:0;right:0}.cc-revoke,.cc-window{box-sizing:border-box;font-family:Roboto,sans-serif;font-size:14px;line-height:1.5em;overflow:hidden;padding:1em .3em;position:fixed;text-align:center;z-index:9999;box-shadow:0 0 13px rgba(0,0,0,.66);bottom:0;width:100%}.cc-color-override--1680425298 .cc-link,.cc-color-override--1680425298 .cc-link:active,.cc-color-override--1680425298 .cc-link:visited{color:#fff}.cc-link,.cc-revoke:hover{text-decoration:underline}.cc-btn{background-color:#fff;border:2px solid transparent;color:#000;display:block;font-size:.9em;font-weight:700;margin:10px auto 0;max-width:200px;padding:.4em .7em;text-align:center;white-space:nowrap}.cc-color-override-773534759 .cc-btn:hover{background-color:#27a8b4!important}.cc-btn,.cc-close,.cc-link,.cc-revoke{cursor:pointer}.cc-compliance{display:inline-block;margin-left:30px}#alert-ok .close{top:-22px}.d-none{display:none}label{font-size:15px;font-weight:400}.row-order{display:flex;flex-direction:row;flex-wrap:wrap}@media (max-width:991px){.row-order>.order-last{order:13}.row-order>.col{flex:0 0 100%}}
+/************************************************************
+* 
+* Colors
+*
+/************************************************************/
+:root {
+  --primary: #ABD0BD;
+  --primary-hover: rgb(3, 176, 124);
+}
+.custom-control-label a,
+.download-link {
+  color: #343a3d;
+}
+.custom-control-label a:hover,
+.download-link:hover {
+  color: var(--primary-hover);
+}
+
+
+label.custom-control-label {
+  color: #7c8387;
+} 
+/************************************************************
+* 
+* Header
+*
+/************************************************************/
+.c-main-title {
+  display: table;
+    position: relative;
+    vertical-align: middle;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1135px;
+}
+  .c-main-title > span {
+    display: table-cell;
+    vertical-align: middle;
+  }
+@media only screen and (max-width: 991px) {
+  h3.c-main-title {
+    font-size: 25px !important;
+    line-height: 1.1 !important;
+    margin: 0 15px;
+  }
+}
+
+.c-button-resaltado {
+  background: var(--primary);
+  padding: 5px 10px;
+  color: white;
+}
+
+/* Estilos para ocultar el buscador */
+.c-search-toggler *, .nav.navbar-nav.c-theme-nav-right * {
+  display: none !important;
+}
+
+/************************************************************
+* 
+* Packs
+*
+/************************************************************/
+.c-packs-description {
+  margin: 15px 30px;
+  text-align: left;
+  height: 240px;
+}
+@media only screen and (max-width: 991px) {
+  .c-packs-description {
+    height: initial;
+  }
+}
+
+/************************************************************
+* 
+* Cookies
+*
+/************************************************************/
+.cc-window {
+  opacity: 1;
+  transition: opacity 1s ease
+}
+.cc-window.cc-invisible { opacity: 0 }
+.cc-animate.cc-revoke { transition: transform 1s ease }
+.cc-animate.cc-revoke.cc-top { transform: translateY(-2em) }
+.cc-animate.cc-revoke.cc-bottom { transform: translateY(2em) }
+.cc-animate.cc-revoke.cc-active.cc-bottom, .cc-animate.cc-revoke.cc-active.cc-top, .cc-revoke:hover { transform: translateY(0) }
+.cc-grower {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s
+}
+.cc-color-override--1680425298.cc-window {
+  background-color: rgba(0, 0, 0, 0.8)!important;
+  color: #fff;
+}
+.cc-banner.cc-bottom {
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.cc-revoke, .cc-window {
+  box-sizing: border-box;
+  font-family: "Roboto",sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  overflow: hidden;
+  padding: 1em 0.3em;
+  position: fixed;
+  text-align: center;
+  z-index: 9999;
+  box-shadow: 0px 0px 13px rgba(0,0,0,.66);
+  bottom: 0px;
+  width: 100%;
+}
+
+.cc-color-override--1680425298 .cc-link, .cc-color-override--1680425298 .cc-link:active, .cc-color-override--1680425298 .cc-link:visited {
+  color: #fff;
+}
+.cc-link, .cc-revoke:hover {
+  text-decoration: underline;
+}
+.cc-btn {
+  background-color: #ffffff;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 2px;
+  color: #000;
+  display: block;
+  font-size: 0.9em;
+  font-weight: 700;
+  margin: 10px auto 0;
+  max-width: 200px;
+  padding: 0.4em 0.7em;
+  text-align: center;
+  white-space: nowrap;
+  /*border-radius: 3px;*/
+}
+.cc-color-override-773534759 .cc-btn {
+  background-color: var(--primary) !important;
+}
+.cc-color-override-773534759 .cc-btn:hover {
+  background-color: var(--primary-hover) !important;
+}
+.cc-btn, .cc-close, .cc-link, .cc-revoke {
+  cursor: pointer;
+}
+.cc-compliance {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+
+/************************************************************
+* 
+* Alert
+*
+/************************************************************/
+#alert-ok .close {
+  top: -22px;
+}
+.d-none {
+  display: none;
+}
+
+label {
+  font-size: 15px;
+  font-weight: initial;
+}
+
+
+/************************************************************
+* 
+* Order columns
+*
+/************************************************************/
+.row-order {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media (max-width: 991px) {
+  .row-order > .order-last {
+    order: 13;
+  }
+  .row-order > .col {
+    flex: 0 0 100%;
+  }
+}
