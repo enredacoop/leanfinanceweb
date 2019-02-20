@@ -27,6 +27,8 @@ function sendEmail() {
        console.log('SUCCESS!', response.status, response.text);
       $("#alert-ok").removeClass("d-none");
 			document.getElementById("form-leanfinance").reset();
+			// Redireccionamos a la página de Gracias
+			window.location = "http://leanfinance.es/gracias";
     }, function(error) {
        console.log('FAILED...', error);
       $("#alert-ko").removeClass("d-none");
@@ -58,6 +60,8 @@ function sendEmailAndDownload() {
       $("#alert-download-ok").removeClass("d-none");
       document.getElementById("download-file-start").src = 'descargas/' + download_file;
 			document.getElementById("form-download-leanfinance").reset();
+			// Redireccionamos a la página de Gracias
+			window.location = "http://leanfinance.es/gracias";
     }, function(error) {
       $("#alert-download-ko").removeClass("d-none");
     });
