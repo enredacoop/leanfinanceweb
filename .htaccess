@@ -1,12 +1,12 @@
-Redirect 301 https://leanfinance.es/como-pedir-un-enisa-7-trucos-para-solicitarlo-con-exito/ https://leanfinance.es/blog/
-Redirect 301 https://leanfinance.es/finanzas-en-tu-startup/ https://leanfinance.es/blog/
-Redirect 301 https://leanfinance.es/bancos-comerciales-espana-financiacion-startup/ https://leanfinance.es/blog/
-Redirect 301 https://leanfinance.es/problemas-cobrar-facturas-fecha/ https://leanfinance.es/blog/
-Redirect 301 https://leanfinance.es/problemas-cobrar-facturas-fecha/ https://leanfinance.es/blog/
-Redirect 301 https://leanfinance.es/finanzas-proyectos-cmunicacion/ https://leanfinance.es/blog/
-Redirect 301 https://leanfinance.es/importancia-cobrar-facturas-en-fecha-ii/ https://leanfinance.es/blog/
-Redirect 301 https://leanfinance.es/inversion-enisa-por-empresa-ultimos-anos/ https://leanfinance.es/blog/
-Redirect 301 https://leanfinance.es/5-metricas-financieras-que-debes-incorporar-a-tu-plan/ https://leanfinance.es/blog/
-Redirect 301 https://leanfinance.es/como-puedo-financiar-una-startup-de-forma-exitosa/ https://leanfinance.es/blog/
+Redirect 301 /como-pedir-un-enisa-7-trucos-para-solicitarlo-con-exito/ https://leanfinance.es/blog/
+Redirect 301 /finanzas-en-tu-startup/ https://leanfinance.es/blog/
+Redirect 301 /bancos-comerciales-espana-financiacion-startup/ https://leanfinance.es/blog/
+Redirect 301 /problemas-cobrar-facturas-fecha/ https://leanfinance.es/blog/
+Redirect 301 /problemas-cobrar-facturas-fecha/ https://leanfinance.es/blog/
+Redirect 301 /finanzas-proyectos-cmunicacion/ https://leanfinance.es/blog/
+Redirect 301 /importancia-cobrar-facturas-en-fecha-ii/ https://leanfinance.es/blog/
+Redirect 301 /inversion-enisa-por-empresa-ultimos-anos/ https://leanfinance.es/blog/
+Redirect 301 /5-metricas-financieras-que-debes-incorporar-a-tu-plan/ https://leanfinance.es/blog/
+Redirect 301 /como-puedo-financiar-una-startup-de-forma-exitosa/ https://leanfinance.es/blog/
 
 ErrorDocument 404 http://leanfinance.es/404.html
