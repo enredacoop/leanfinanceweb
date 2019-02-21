@@ -1,7 +1,3 @@
-RewriteEngine On 
-RewriteCond %{SERVER_PORT} 80 
-RewriteRule ^(.*)$ https://leanfinance.es/$1 [R,L]
-
 Redirect 301 /como-pedir-un-enisa-7-trucos-para-solicitarlo-con-exito/ https://leanfinance.es/blog/
 Redirect 301 /finanzas-en-tu-startup/ https://leanfinance.es/blog/
 Redirect 301 /bancos-comerciales-espana-financiacion-startup/ https://leanfinance.es/blog/
@@ -12,5 +8,9 @@ Redirect 301 /importancia-cobrar-facturas-en-fecha-ii/ https://leanfinance.es/bl
 Redirect 301 /inversion-enisa-por-empresa-ultimos-anos/ https://leanfinance.es/blog/
 Redirect 301 /5-metricas-financieras-que-debes-incorporar-a-tu-plan/ https://leanfinance.es/blog/
 Redirect 301 /como-puedo-financiar-una-startup-de-forma-exitosa/ https://leanfinance.es/blog/
+
+RewriteCond %{HTTP_HOST} !^leanfinance\.es [OR]
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule (.*) https://leanfinance.es/$1 [R=301,L]
 
 ErrorDocument 404 http://leanfinance.es/404.html
