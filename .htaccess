@@ -1,3 +1,7 @@
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://leanfinance.es/$1 [R,L]
+
 Redirect 301 /como-pedir-un-enisa-7-trucos-para-solicitarlo-con-exito/ https://leanfinance.es/blog/
 Redirect 301 /finanzas-en-tu-startup/ https://leanfinance.es/blog/
 Redirect 301 /bancos-comerciales-espana-financiacion-startup/ https://leanfinance.es/blog/
