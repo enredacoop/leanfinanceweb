@@ -20,6 +20,10 @@
 label.custom-control-label {
   color: #7c8387;
 } 
+
+h1 {
+  font-size: 30px !important;
+}
 /************************************************************
 * 
 * Header
