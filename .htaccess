@@ -9,8 +9,17 @@ Redirect 301 /inversion-enisa-por-empresa-ultimos-anos/ https://leanfinance.es/b
 Redirect 301 /5-metricas-financieras-que-debes-incorporar-a-tu-plan/ https://leanfinance.es/blog/
 Redirect 301 /como-puedo-financiar-una-startup-de-forma-exitosa/ https://leanfinance.es/blog/
 
+Redirect 301 /index.html https://leanfinance.es/
+Redirect 301 /enisa/index.html https://leanfinance.es/enisa/
+Redirect 301 /blog/index.html https://leanfinance.es/blog/
+Redirect 301 /contacto/index.html https://leanfinance.es/contacto/
+Redirect 301 /herramientas/index.html https://leanfinance.es/herramientas/
+Redirect 301 /finanzas-startups/index.html https://leanfinance.es/finanzas-startups/
+Redirect 301 /gracias/index.html https://leanfinance.es/gracias/
+
 RewriteCond %{HTTP_HOST} !^leanfinance\.es [OR]
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteRule (.*) https://leanfinance.es/$1 [R=301,L]
+
 
 ErrorDocument 404 http://leanfinance.es/404.html

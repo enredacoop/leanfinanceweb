@@ -24,6 +24,10 @@ label.custom-control-label {
 h1 {
   font-size: 30px !important;
 }
+h1.main-title {
+  max-width: 1135px;
+  margin: 0 auto;
+}
 /************************************************************
 * 
 * Header
