@@ -1,3 +1,6 @@
+##################
+# Hacemos redirecciones de los posts antiguos del blog
+##################
 Redirect 301 /como-pedir-un-enisa-7-trucos-para-solicitarlo-con-exito/ https://leanfinance.es/blog/
 Redirect 301 /finanzas-en-tu-startup/ https://leanfinance.es/blog/
 Redirect 301 /bancos-comerciales-espana-financiacion-startup/ https://leanfinance.es/blog/
@@ -9,17 +12,53 @@ Redirect 301 /inversion-enisa-por-empresa-ultimos-anos/ https://leanfinance.es/b
 Redirect 301 /5-metricas-financieras-que-debes-incorporar-a-tu-plan/ https://leanfinance.es/blog/
 Redirect 301 /como-puedo-financiar-una-startup-de-forma-exitosa/ https://leanfinance.es/blog/
 
-Redirect 301 /index.html https://leanfinance.es/
-Redirect 301 /enisa/index.html https://leanfinance.es/enisa/
-Redirect 301 /blog/index.html https://leanfinance.es/blog/
-Redirect 301 /contacto/index.html https://leanfinance.es/contacto/
-Redirect 301 /herramientas/index.html https://leanfinance.es/herramientas/
-Redirect 301 /finanzas-startups/index.html https://leanfinance.es/finanzas-startups/
-Redirect 301 /gracias/index.html https://leanfinance.es/gracias/
+##################
+# Quitamos de las URLs index.html e index.php
+##################
+RewriteEngine on RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+RewriteRule ^index\.html$ https://leanfinance.es/ [R=301,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+RewriteRule ^index\.php$ https://leanfinance.es/ [R=301,L]
 
+RewriteEngine on RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+RewriteRule ^enisa/index\.html$ https://leanfinance.es/enisa [R=301,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+RewriteRule ^enisa/index\.php$ https://leanfinance.es/enisa [R=301,L]
+
+RewriteEngine on RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+RewriteRule ^finanzas-startups/index\.html$ https://leanfinance.es/finanzas-startups [R=301,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+RewriteRule ^finanzas-startups/index\.php$ https://leanfinance.es/finanzas-startups [R=301,L]
+
+RewriteEngine on RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+RewriteRule ^blog/index\.html$ https://leanfinance.es/blog [R=301,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+RewriteRule ^blog/index\.php$ https://leanfinance.es/blog [R=301,L]
+
+RewriteEngine on RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+RewriteRule ^herramientas/index\.html$ https://leanfinance.es/herramientas [R=301,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+RewriteRule ^herramientas/index\.php$ https://leanfinance.es/herramientas [R=301,L]
+
+RewriteEngine on RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+RewriteRule ^contacto/index\.html$ https://leanfinance.es/contacto [R=301,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+RewriteRule ^contacto/index\.php$ https://leanfinance.es/contacto [R=301,L]
+
+RewriteEngine on RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+RewriteRule ^gracias/index\.html$ https://leanfinance.es/gracias [R=301,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+RewriteRule ^gracias/index\.php$ https://leanfinance.es/gracias [R=301,L]
+
+##################
+# Controlamos que solo se acceda a la web por https
+# si se entra por http se redirige a https
+##################
 RewriteCond %{HTTP_HOST} !^leanfinance\.es [OR]
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteRule (.*) https://leanfinance.es/$1 [R=301,L]
 
-
+##################
+# Indicamos la página de error 404
+##################
 ErrorDocument 404 http://leanfinance.es/404.html
