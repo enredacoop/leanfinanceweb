@@ -1,5 +1,6 @@
 $(function(){
-	$(".download-link").on('click', function(){
+	$(".download-link").on('click', function(event){
+		event.preventDefault();
 		$("input#form-download").val( this.getAttribute("data-download") );
 		$("#alert-download-ok").addClass("d-none");
 		$("#alert-download-ko").addClass("d-none");
@@ -58,11 +59,37 @@ function sendEmailAndDownload() {
 	emailjs.send(service_id, template_id, template_params, "user_0t6pKfOxfc5URBHNxCPaU")
 		.then(function(response) {
       $("#alert-download-ok").removeClass("d-none");
-      document.getElementById("download-file-start").src = 'descargas/' + download_file;
+      
+      //document.getElementById("download-file-start").src = 'descargas/' + download_file;
+      downloadLink(download_file);
+
 			document.getElementById("form-download-leanfinance").reset();
 			// Redireccionamos a la página de Gracias
-			window.location = "http://leanfinance.es/gracias";
+			window.open("https://leanfinance.es/gracias");
     }, function(error) {
       $("#alert-download-ko").removeClass("d-none");
     });
+}
+
+function downloadLink(download_file) {
+	window.open('https://leanfinance.es/herramientas/descargas/' + download_file);
+
+	/*var ajaxOptions = {
+		url: 'https://leanfinance.es/herramientas/descargas/' + download_file
+    };
+    
+    var res = $.ajax(ajaxOptions);
+    
+    function onAjaxDone(data) {
+    		location.href = 'https://leanfinance.es/herramientas/descargas/' + download_file;
+    }
+    
+    function onAjaxFail() {
+    	alert('Se ha producido un error. Intenta la descarga más tarde.');
+    }
+    
+    res
+    	.done(onAjaxDone)
+        .fail(onAjaxFail)
+    ;*/
 }
