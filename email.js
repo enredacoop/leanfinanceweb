@@ -36,6 +36,33 @@ function sendEmail() {
     });
 }
 
+function sendEmailEnisa() {
+	nombre = $("#form-name").val();
+	email = $("#form-email").val();
+	phone = $("#form-phone").val();
+	body = nombre + " ha rellenado el formulario de solicitud de ayuda sobre Enisa. Los datos son los siguientes.<br><br><p><strong>Nombre:</strong> " + nombre + "</p><p><strong>Email:</strong> " + email + "</p><p><strong>Teléfono:</strong> " + phone + "</p>";
+
+	var template_params = {
+	   "reply_to": email,
+	   "message_html": body
+	}
+
+	var service_id = "default_service";
+	var template_id = "plantilla_contacto";
+
+	emailjs.send(service_id, template_id, template_params, "user_0t6pKfOxfc5URBHNxCPaU")
+		.then(function(response) {
+       console.log('SUCCESS!', response.status, response.text);
+      $("#alert-ok").removeClass("d-none");
+			document.getElementById("form-leanfinance-enisa").reset();
+			// Redireccionamos a la página de Gracias
+			window.location = "http://leanfinance.es/gracias";
+    }, function(error) {
+       console.log('FAILED...', error);
+      $("#alert-ko").removeClass("d-none");
+    });
+}
+
 function sendEmailAndDownload() {
 	email = $("#form-download-email").val();
 	download = $('input#form-download').val();
@@ -44,7 +71,7 @@ function sendEmailAndDownload() {
 		case "1" : download_file = "CALCULADORA_GASTOS_ FINANCIEROS.xlsx"; break;
 		case "2" : download_file = "cap_table.xlsx"; break;
 		case "3" : download_file = "Investor_Deck.pptx"; break;
-		case "4" : download_file = "Proyecciones_2018-2022.xls"; break;
+		case "4" : download_file = "PROYECCIONES_FINANCIERAS_4_ AÑOS.xlsx"; break;
 	}
 	body = "<strong>" + email + "</strong> ha descargado el archivo <strong>" + download_file + "</strong>";
 

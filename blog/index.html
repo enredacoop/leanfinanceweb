@@ -29,8 +29,13 @@ Follow: http://www.twitter.com/themehats
 		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 		})(window,document,'script','dataLayer','GTM-55FHQHV');</script>
 	<!-- End Google Tag Manager -->
-	<!-- BEGIN GLOBAL MANDATORY STYLES -->
-	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&amp;subset=devanagari,latin-ext" rel="stylesheet">
+	<!-- Google Analytics -->
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- End Google Analytics -->
+
+	<!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
 	<link href="../assets/plugins/socicon/socicon.css" rel="stylesheet" type="text/css"/>
 	<link href="../assets/plugins/bootstrap-social/bootstrap-social.css" rel="stylesheet" type="text/css"/>		
 	<link href="../assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
@@ -57,8 +62,12 @@ Follow: http://www.twitter.com/themehats
 	<link href="../assets/demos/Blog/css/plugins.css" rel="stylesheet" type="text/css"/>
 	<link href="../assets/demos/Blog/css/components.css" id="style_components" rel="stylesheet" type="text/css"/>
 	<!--link href="../assets/demos/Blog/css/themes/default.css" rel="stylesheet" id="style_theme" type="text/css"/-->
-	<link href="../assets/demos/Blog/css/custom.css" rel="stylesheet" type="text/css"/>
+	<link href="../assets/demos/Blog/css/custom.css?v2.2" rel="stylesheet" type="text/css"/>
+	<link href="../assets/demos/enisa/css/custom.css?v2.3" rel="stylesheet" type="text/css"/>
 	<!-- END THEME STYLES -->
+
+	<!-- FontAwesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
 	<link rel="shortcut icon" href="favicon.ico"/>
 </head>
@@ -68,15 +77,16 @@ Follow: http://www.twitter.com/themehats
       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-	<!-- BEGIN: LAYOUT/HEADERS/HEADER-ONEPAGE-1 -->
-	<!-- BEGIN: HEADER -->
+
+	<!-- Start Navbar 
+    ============================================= -->
 	<header id="header-onepage-1" class="c-layout-header c-layout-header-onepage c-layout-header-7 c-layout-header-dark-mobile c-header-transparent-dark" id="home" data-minimize-offset="0">
 		<div class="c-navbar ">
 			<div class="container">
 				<!-- BEGIN: BRAND -->
 				<div class="c-navbar-wrapper clearfix">
 					<div class="c-brand c-pull-left">
-						<a href="../" class="c-logo">
+						<a href="../" class="c-logo effect-shrink">
 							<img src="../assets/base/img/layout/logos/logo-3.png" alt="JANGO" class="c-desktop-logo">
 							<img src="../assets/base/img/layout/logos/logo-1.png" alt="JANGO" class="c-desktop-logo-inverse">
 							<img src="../assets/base/img/layout/logos/logo-1.png" alt="JANGO" class="c-mobile-logo">
@@ -90,27 +100,19 @@ Follow: http://www.twitter.com/themehats
 							<i class="fa fa-search"></i>
 						</button>
 					</div>
-					<!-- END: BRAND -->				
-                    <!-- BEGIN: QUICK SEARCH -->
-                    <form class="c-quick-search" action="#">
-                        <input type="text" name="query" placeholder="Escribe para buscar..." value="" class="form-control" autocomplete="off">
-                        <span class="c-theme-link">&times;</span>
-                    </form>
-                    <!-- END: QUICK SEARCH -->	
-					<!-- BEGIN: HOR NAV -->
-					<!-- BEGIN: LAYOUT/HEADERS/MEGA-MENU-ONEPAGE -->
-					<!-- BEGIN: MEGA MENU -->
 					<nav class="c-mega-menu c-mega-menu-onepage c-mega-menu-dark c-mega-menu-dark-mobile c-fonts-uppercase" data-onepage-animation-speed="700">
 						<ul class="nav navbar-nav c-theme-nav"> 
 							<li class="c-onepage-link">
-								<a href="../" class="c-link">Inicio</a>
+								<a href="../" class="c-link">Conócenos</a>
 							</li>
-			
 							<li class="c-onepage-link ">
 								<a href="../enisa" class="c-link">ENISA</a>
 							</li>
 							<li class="c-onepage-link ">
 								<a href="../finanzas-startups" class="c-link">Finanzas para Startups</a>
+							</li>
+							<li class="c-onepage-link ">
+								<a href="../inversores" class="c-link">Inversores</a>
 							</li>
 							<li class="c-onepage-link c-active active">
 								<a href="#home" class="c-link">Blog</a>
@@ -121,54 +123,37 @@ Follow: http://www.twitter.com/themehats
 							<li class="c-onepage-link ">
 								<a href="../contacto" class="c-link"><span class="c-button-resaltado">Contacto</span></a>
 							</li>
-						</ul>
-                            
-                        <ul class="nav navbar-nav c-theme-nav-right"> 
-                            <li class="c-search-toggler-wrapper">
-                                <a  href="#" class="c-btn-icon c-search-toggler"><i class="fa fa-search"></i></a>
-                            </li>
-                        </ul>
+						</ul>      
+            <ul class="nav navbar-nav c-theme-nav-right"> 
+                <li class="c-search-toggler-wrapper">
+                    <a  href="#" class="c-btn-icon c-search-toggler"><i class="fa fa-search"></i></a>
+                </li>
+            </ul>
 					</nav>
-
-					<!-- END: MEGA MENU --><!-- END: LAYOUT/HEADERS/MEGA-MENU-ONEPAGE -->
-					<!-- END: HOR NAV -->		
 				</div>			
 			</div>
 		</div>
 	</header>
-	<!-- END: HEADER --><!-- END: LAYOUT/HEADERS/HEADER-ONEPAGE-1 -->
-	
-
-
-	<!-- BEGIN: PAGE CONTAINER -->
-	<div class="c-layout-page">
-		<!-- BEGIN: PAGE CONTENT -->
-		<div id="home"></div>
-
-	</div>
-</div>
-</header>
-<!-- END: HEADER --><!-- END: LAYOUT/HEADERS/HEADER-1 -->
+	<!-- End Navbar -->
 
 
 <!-- BEGIN: PAGE CONTAINER -->
 <div class="c-layout-page">
 	<!-- BEGIN: LAYOUT/BREADCRUMBS/BREADCRUMBS-1 -->
 
-<div class="c-layout-breadcrumbs-1 c-fonts-uppercase c-fonts-bold c-bordered c-bordered-both">
-	<div class="container">
-		<div class="c-content-title-1 c-opt-1" style="visibility: visible; animation-name: fadeInUp; opacity: 1;">
-				<h1 class="c-center c-font-bold"> Blog </h1>
-				<p class="c-font-center"></p>
-				<div class="c-line-center c-theme-bg"></div>
-			</div>
-		<!--ul class="c-page-breadcrumbs c-theme-nav c-pull-right c-fonts-regular">
-															<li><a href="../">Página Principal</a></li>
-			<li>/</li>
-															<li><a href="#home">Blog</a></li>						
-		</ul-->
+	<!-- Start Header 
+	    ============================================= -->
+	<div class="c-layout-breadcrumbs-1 c-fonts-uppercase c-fonts-bold c-bordered c-bordered-both">
+		<div class="container">
+			<div class="c-content-title-1 c-opt-1" style="visibility: visible; animation-name: fadeInUp; opacity: 1;">
+					<h1 class="c-center c-font-bold"> Blog </h1>
+					<p class="c-font-center"></p>
+					<div class="c-line-center c-theme-bg"></div>
+				</div>
+		</div>
 	</div>
-</div><!-- END: LAYOUT/BREADCRUMBS/BREADCRUMBS-1 -->
+	<!-- End Header -->
+
 	<!-- BEGIN: PAGE CONTENT -->
 	<!-- BEGIN: BLOG LISTING -->
 	<div class="c-content-box c-size-md">
@@ -178,9 +163,6 @@ Follow: http://www.twitter.com/themehats
 					<div class="c-content-blog-post-card-1-grid">
 						<div id="jsonContent" class="row">
 							
-
-
-
 						</div>
 					</div>
 				</div>
@@ -188,6 +170,63 @@ Follow: http://www.twitter.com/themehats
 				</div>
 			</div>
 		</div> 
+
+
+		<div id="blog-modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="modalBlog" aria-hidden="true" style="display: none;">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content c-square">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+								<h4 id="modal-title" class="modal-title" id="modalBlog"></h4>
+							</div>
+							<div id="modal-content" class="modal-body">
+							</div>
+							<div class="modal-footer">
+
+								<div class="block-networks">
+									<a id="bs-facebook" class="btn-share facebook" href="" target="_blank" rel="noopener" aria-label="">
+									  <span class="fa-stack">
+										  <i class="fas fa-circle fa-stack-2x"></i>
+										  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+										</span>
+									</a>
+									<a id="bs-twitter" class="btn-share twitter" href="" target="_blank" rel="noopener" aria-label="">
+									  <span class="fa-stack">
+										  <i class="fas fa-circle fa-stack-2x"></i>
+										  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+										</span>
+									</a>
+									<a id="bs-linkedin" class="btn-share linkedin" href="" target="_blank" rel="noopener" aria-label="">
+									  <span class="fa-stack">
+										  <i class="fas fa-circle fa-stack-2x"></i>
+										  <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+										</span>
+									</a>
+									<a id="bs-whatsapp" class="btn-share whatsapp" href="" target="_blank" rel="noopener" aria-label="">
+									  <span class="fa-stack">
+										  <i class="fas fa-circle fa-stack-2x"></i>
+										  <i class="fab fa-whatsapp fa-stack-1x fa-inverse"></i>
+										</span>
+									</a>
+									<a id="bs-telegram" class="btn-share telegram" href="" target="_blank" rel="noopener" aria-label="">
+									  <span class="fa-stack">
+										  <i class="fas fa-circle fa-stack-2x"></i>
+										  <i class="fab fa-telegram-plane fa-stack-1x fa-inverse"></i>
+										</span>
+									</a>
+								</div>
+
+						
+								<button type="button" class="btn c-btn-dark c-btn-border-2x c-btn-square c-btn-bold c-btn-uppercase" data-dismiss="modal">Cerrar</button>
+							</div>
+						</div>
+						<!-- /.modal-content -->
+					</div>
+					<!-- /.modal-dialog -->
+				</div>
+
+
+
 	</div>
 	<!-- END: BLOG LISTING  -->
 
@@ -200,7 +239,7 @@ Follow: http://www.twitter.com/themehats
 <!-- END: PAGE CONTAINER -->
 
 <!-- BEGIN: FOOTER -->
-<div id="contacto" class="c-content-box c-size-md c-no-padding c-bg-img-center" style="background-image:url(../assets/base/img/content/backgrounds/bg_feedback_1.jpg);">
+<div id="contacto" class="c-content-box c-size-md c-no-padding c-bg-img-center" style="background-image:url(../assets/base/img/content/persons/leanfinance_1_custom.jpg);">
     <div class="container">
         <div class="c-content-feedback-1 c-option-2">
             <div class="c-content-title-1">
@@ -346,6 +385,7 @@ Follow: http://www.twitter.com/themehats
 <script src="../assets/base/js/components.js" type="text/javascript"></script>
 <script src="../assets/base/js/components-shop.js" type="text/javascript"></script>
 <script src="../assets/base/js/app.js" type="text/javascript"></script>
+<script src="../assets/base/js/custom.js?v3.4" type="text/javascript"></script>
 <script>
 	$(document).ready(function() {    
 		App.init(); // init core    
@@ -373,7 +413,6 @@ Follow: http://www.twitter.com/themehats
 			if (response.status == 'ok') {
 				var output = '';
 				$.each(response.items, function (k, item) {
-					
 					var tagIndex = item.description.indexOf('<img'); // Find where the img tag starts
 					var srcIndex = item.description.substring(tagIndex).indexOf('src=') + tagIndex; // Find where the src attribute starts
 					var srcStart = srcIndex + 5; // Find where the actual image URL starts; 5 for the length of 'src="'
@@ -382,12 +421,12 @@ Follow: http://www.twitter.com/themehats
 					var date = new Date( item.pubDate);
 					var strDate = date.toLocaleDateString();
 
-						output += '<div class="col-sm-12 col-md-6">';
+						output += '<div class="col-sm-12 col-md-6 item-blog" item-blog="' + k + '" id="' + clearTitle(item.title) + '">';
 							output += '<div class="c-content-blog-post-card-1 c-option-2 c-bordered">';			  			
 								output += '<div class="c-media c-content-overlay">';
 									output += '<div class="c-overlay-wrapper">';
 										output += '<div class="c-overlay-content">';
-											output += '<a target="_blank" href="' + item.link + '"><i class="icon-link"></i></a>';
+											output += '<a href="#"><i class="icon-link"></i></a>';
 										output += '</div>';
 									output += '</div>';
 									output += '<img class="art-bd-img" src="' + src + '" style="opacity: 1;">';
@@ -395,18 +434,28 @@ Follow: http://www.twitter.com/themehats
 								output += '<div class="c-body">';
 									output += '<div class="c-date">' + strDate + '</div>';
 									output += '<div class="c-title c-font-bold c-font-uppercase">';
-										output += '<a target="_blank" href="' + item.link + '">' + item.title + ' </a>';
+										output += '<a id="item-' + k + '-title" href="#">' + item.title + ' </a>';
 									output += '</div>';
 								output += '</div>';
 							output += '</div>';
 						output += '</div>';
+						output += '<div id="item-' + k + '-description" class="hidden">' + item.description + '</div>'; 
 
 					return k < 10;
 				});
 				$content.html(output);
 			}
+		}).then( function(){
+			showModalContent();
+
+			if( item_blog != ""){
+				loadModalContent( item_blog );
+			}
 		});
-	});			
+
+
+	});	
+
 </script>
 <!--END: Script para blog-->
 

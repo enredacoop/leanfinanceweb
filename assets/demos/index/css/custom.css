@@ -5,7 +5,8 @@
 /************************************************************/
 :root {
   --primary: #ABD0BD;
-  --primary-hover: rgb(3, 176, 124);
+  --primary-hover: #78c3a8;
+  --default: #343a3d;
 }
 .custom-control-label a,
 .download-link {
@@ -15,7 +16,14 @@
 .download-link:hover {
   color: var(--primary-hover);
 }
+.nav.navbar-nav.c-theme-nav {
+  float: right !important;
+}
 
+/* Navbar */
+.nav.navbar-nav > li > .c-link {
+  font-size: 13px !important;
+}
 
 label.custom-control-label {
   color: #7c8387;
@@ -57,7 +65,7 @@ h1.main-title {
 .c-button-resaltado {
   background: var(--primary);
   padding: 5px 10px;
-  color: white;
+  color: var(--default);
 }
 
 /* Estilos para ocultar el buscador */
