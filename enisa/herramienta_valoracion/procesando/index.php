@@ -32,32 +32,32 @@ Follow: http://www.twitter.com/themehats
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 
-        <link href="../assets/plugins/socicon/socicon.css" rel="stylesheet" />
-        <link href="../assets/plugins/bootstrap-social/bootstrap-social.css" rel="stylesheet" />
-        <link href="../assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-        <link href="../assets/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" />
-        <link href="../assets/plugins/animate/animate.min.css" rel="stylesheet" />
-        <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="../../../assets/plugins/socicon/socicon.css" rel="stylesheet" />
+        <link href="../../../assets/plugins/bootstrap-social/bootstrap-social.css" rel="stylesheet" />
+        <link href="../../../assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="../../../assets/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" />
+        <link href="../../../assets/plugins/animate/animate.min.css" rel="stylesheet" />
+        <link href="../../../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
         <!-- END GLOBAL MANDATORY STYLES -->
         <!-- BEGIN: BASE PLUGINS  -->
-        <link href="../assets/plugins/revo-slider/css/settings.css" rel="stylesheet" />
-        <link href="../assets/plugins/revo-slider/css/layers.css" rel="stylesheet" />
-        <link href="../assets/plugins/revo-slider/css/navigation.css" rel="stylesheet" />
-        <link href="../assets/plugins/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" />
-        <link href="../assets/plugins/owl-carousel/assets/owl.carousel.css" rel="stylesheet" />
-        <link href="../assets/plugins/fancybox/jquery.fancybox.css" rel="stylesheet" />
-        <link href="../assets/plugins/slider-for-bootstrap/css/slider.css" rel="stylesheet" />
+        <link href="../../../assets/plugins/revo-slider/css/settings.css" rel="stylesheet" />
+        <link href="../../../assets/plugins/revo-slider/css/layers.css" rel="stylesheet" />
+        <link href="../../../assets/plugins/revo-slider/css/navigation.css" rel="stylesheet" />
+        <link href="../../../assets/plugins/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" />
+        <link href="../../../assets/plugins/owl-carousel/assets/owl.carousel.css" rel="stylesheet" />
+        <link href="../../../assets/plugins/fancybox/jquery.fancybox.css" rel="stylesheet" />
+        <link href="../../../assets/plugins/slider-for-bootstrap/css/slider.css" rel="stylesheet" />
         <!-- END: BASE PLUGINS -->
         <!-- BEGIN: PAGE STYLES -->
-        <link href="../assets/plugins/ilightbox/css/ilightbox.css" rel="stylesheet" />
+        <link href="../../../assets/plugins/ilightbox/css/ilightbox.css" rel="stylesheet" />
         <!-- END: PAGE STYLES -->
         <!-- BEGIN THEME STYLES -->
-        <link href="../assets/demos/index/css/plugins.css" rel="stylesheet" />
-        <link href="../assets/demos/index/css/components.css" id="style_components" rel="stylesheet" />
+        <link href="../../../assets/demos/index/css/plugins.css" rel="stylesheet" />
+        <link href="../../../assets/demos/index/css/components.css" id="style_components" rel="stylesheet" />
         <!--link href="assets/demos/index/css/themes/default.css" rel="stylesheet" id="style_theme" /-->
-        <link href="../assets/demos/index/css/custom.css?v2.4" rel="stylesheet" />
+        <link href="../../../assets/demos/enisa/css/custom.css?v2.4" rel="stylesheet" />
         <!-- END THEME STYLES -->
-        <link rel="shortcut icon" href="../favicon.ico" />
+        <link rel="shortcut icon" href="../../../favicon.ico" />
     </head>
 
     <body class="c-layout-header-fixed c-layout-header-mobile-fixed">
@@ -73,10 +73,10 @@ Follow: http://www.twitter.com/themehats
                     <!-- BEGIN: BRAND -->
                     <div class="c-navbar-wrapper clearfix">
                         <div class="c-brand c-pull-left">
-                            <a href="../" class="c-logo effect-shrink" title="">
-                                <img src="../assets/base/img/layout/logos/logo-3.png" alt="Lean Finance" class="c-desktop-logo">
-                                <img src="../assets/base/img/layout/logos/logo-1.png" alt="Lean Finance" class="c-desktop-logo-inverse">
-                                <img src="../assets/base/img/layout/logos/logo-1.png" alt="Lean Finance" class="c-mobile-logo">
+                            <a href="../../../" class="c-logo effect-shrink" title="">
+                                <img src="../../../assets/base/img/layout/logos/logo-3.png" alt="Lean Finance" class="c-desktop-logo">
+                                <img src="../../../assets/base/img/layout/logos/logo-1.png" alt="Lean Finance" class="c-desktop-logo-inverse">
+                                <img src="../../../assets/base/img/layout/logos/logo-1.png" alt="Lean Finance" class="c-mobile-logo">
                             </a>
                             <!--button class="c-hor-nav-toggler" type="button" data-target=".c-mega-menu"-->
                             <button class="c-hor-nav-toggler" type="button" data-target=".c-mega-menu">
@@ -106,25 +106,25 @@ Follow: http://www.twitter.com/themehats
                         <nav class="c-mega-menu c-mega-menu-onepage c-mega-menu-dark c-mega-menu-dark-mobile c-fonts-uppercase" data-onepage-animation-speed="700">
                             <ul class="nav navbar-nav c-theme-nav">
                                <li class="c-onepage-link">
-                                <a href="../" class="c-link" title="">Conócenos</a>
+                                <a href="../../../" class="c-link" title="">Conócenos</a>
                                 </li>
                                 <li class="c-onepage-link ">
-                                    <a href="../enisa" class="c-link" title="">ENISA</a>
+                                    <a href="../../../enisa" class="c-link" title="">ENISA</a>
                                 </li>
                                 <li class="c-onepage-link ">
-                                    <a href="../finanzas-startups" class="c-link" title="">Finanzas para Startups</a>
+                                    <a href="../../../finanzas-startups" class="c-link" title="">Finanzas para Startups</a>
                                 </li>
                                 <li class="c-onepage-link ">
-                                <a href="../inversores" class="c-link">Inversores</a>
+                                <a href="../../../inversores" class="c-link">Inversores</a>
                             </li>
                                 <li class="c-onepage-link ">
-                                    <a href="../blog" class="c-link">Blog</a>
+                                    <a href="../../../blog" class="c-link">Blog</a>
                                 </li>
                                 <li class="c-onepage-link ">
-                                    <a href="../herramientas" class="c-link">Herramientas</a>
+                                    <a href="../../../herramientas" class="c-link">Herramientas</a>
                                 </li>
                                 <li class="c-onepage-link ">
-                                    <a href="../contacto" class="c-link"><span class="c-button-resaltado">Contacto</span></a>
+                                    <a href="../../../contacto" class="c-link"><span class="c-button-resaltado">Contacto</span></a>
                                 </li>
                             </ul>
                             <ul class="nav navbar-nav c-theme-nav-right"> 
@@ -152,18 +152,29 @@ Follow: http://www.twitter.com/themehats
 
             <div class="c-content-box c-size-md c-bg-white">
               <div class="container">
-                <div class="c-content-title-1 c-center c-margin-t-80">
+                <div class="c-content-title-1 c-center c-margin-t-80 hidden" id="title-loader">
                   <h1 class="c-font-uppercase c-font-bold">Gracias</h1>
                   <div class="c-line-center"></div>
                 </div>
                 <div class="row">
                   <div class="col-sm-12 wow animate fadeInUp text-center" style="visibility: visible; animation-name: fadeInUp; opacity: 1;">     
                     
-                    <h4>
-                        Se ha enviado el formulario de contacto correctamente.
+                    <h4 id="content-loader" class="hidden">
+                        Estamos procesando sus datos.
                         <br>
-                        Le responderemos lo antes posible.
+                        El resultado se le enviará por correo en un plazo de 24-48h.
                     </h4>
+
+                    <div id="loader">
+
+                    </div>
+                    <script type="text/javascript">
+                        setTimeout(function() {
+                            $("#loader").addClass("hidden");
+                            $("#content-loader").removeClass("hidden");
+                            $("#title-loader").removeClass("hidden");
+                        }, 5000);
+                    </script>
                     
 
                   </div>
@@ -190,37 +201,37 @@ Follow: http://www.twitter.com/themehats
         <!-- BEGIN: LAYOUT/BASE/BOTTOM -->
         <!-- BEGIN: CORE PLUGINS -->
         <!--[if lt IE 9]>
-  <script src="../../assets/global/plugins/excanvas.min.js"></script> 
+  <script src="../../../../../../assets/global/plugins/excanvas.min.js"></script> 
   <![endif]-->
-        <script src="../assets/plugins/jquery.min.js"></script>
-        <script src="../assets/plugins/jquery-migrate.min.js"></script>
-        <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-        <script src="../assets/plugins/jquery.easing.min.js"></script>
-        <script src="../assets/plugins/reveal-animate/wow.js"></script>
-        <script src="../assets/demos/index/js/scripts/reveal-animate/reveal-animate.js"></script>
+        <script src="../../../assets/plugins/jquery.min.js"></script>
+        <script src="../../../assets/plugins/jquery-migrate.min.js"></script>
+        <script src="../../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../../../assets/plugins/jquery.easing.min.js"></script>
+        <script src="../../../assets/plugins/reveal-animate/wow.js"></script>
+        <script src="../../../assets/demos/index/js/scripts/reveal-animate/reveal-animate.js"></script>
         <!-- END: CORE PLUGINS -->
         <!-- BEGIN: LAYOUT PLUGINS -->
-        <script src="../assets/plugins/revo-slider/js/jquery.themepunch.tools.min.js"></script>
-        <script src="../assets/plugins/revo-slider/js/jquery.themepunch.revolution.min.js"></script>
-        <script src="../assets/plugins/revo-slider/js/extensions/revolution.extension.slideanims.min.js"></script>
-        <script src="../assets/plugins/revo-slider/js/extensions/revolution.extension.layeranimation.min.js"></script>
-        <script src="../assets/plugins/revo-slider/js/extensions/revolution.extension.navigation.min.js"></script>
-        <script src="../assets/plugins/revo-slider/js/extensions/revolution.extension.video.min.js"></script>
-        <script src="../assets/plugins/revo-slider/js/extensions/revolution.extension.parallax.min.js"></script>
-        <script src="../assets/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
-        <script src="../assets/plugins/owl-carousel/owl.carousel.min.js"></script>
-        <script src="../assets/plugins/counterup/jquery.waypoints.min.js"></script>
-        <script src="../assets/plugins/counterup/jquery.counterup.min.js"></script>
-        <script src="../assets/plugins/fancybox/jquery.fancybox.pack.js"></script>
-        <script src="../assets/plugins/smooth-scroll/jquery.smooth-scroll.js"></script>
-        <script src="../assets/plugins/typed/typed.min.js"></script>
-        <script src="../assets/plugins/slider-for-bootstrap/js/bootstrap-slider.js"></script>
-        <script src="../assets/plugins/js-cookie/js.cookie.js"></script>
+        <script src="../../../assets/plugins/revo-slider/js/jquery.themepunch.tools.min.js"></script>
+        <script src="../../../assets/plugins/revo-slider/js/jquery.themepunch.revolution.min.js"></script>
+        <script src="../../../assets/plugins/revo-slider/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <script src="../../../assets/plugins/revo-slider/js/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script src="../../../assets/plugins/revo-slider/js/extensions/revolution.extension.navigation.min.js"></script>
+        <script src="../../../assets/plugins/revo-slider/js/extensions/revolution.extension.video.min.js"></script>
+        <script src="../../../assets/plugins/revo-slider/js/extensions/revolution.extension.parallax.min.js"></script>
+        <script src="../../../assets/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+        <script src="../../../assets/plugins/owl-carousel/owl.carousel.min.js"></script>
+        <script src="../../../assets/plugins/counterup/jquery.waypoints.min.js"></script>
+        <script src="../../../assets/plugins/counterup/jquery.counterup.min.js"></script>
+        <script src="../../../assets/plugins/fancybox/jquery.fancybox.pack.js"></script>
+        <script src="../../../assets/plugins/smooth-scroll/jquery.smooth-scroll.js"></script>
+        <script src="../../../assets/plugins/typed/typed.min.js"></script>
+        <script src="../../../assets/plugins/slider-for-bootstrap/js/bootstrap-slider.js"></script>
+        <script src="../../../assets/plugins/js-cookie/js.cookie.js"></script>
         <!-- END: LAYOUT PLUGINS -->
         <!-- BEGIN: THEME SCRIPTS -->
-        <script src="../assets/base/js/components.js"></script>
-        <script src="../assets/base/js/components-shop.js"></script>
-        <script src="../assets/base/js/app.js"></script>
+        <script src="../../../assets/base/js/components.js"></script>
+        <script src="../../../assets/base/js/components-shop.js"></script>
+        <script src="../../../assets/base/js/app.js"></script>
         <script>
             $(document).ready(function()
             {
@@ -235,16 +246,16 @@ Follow: http://www.twitter.com/themehats
         </script>
         <!-- END: THEME SCRIPTS -->
         <!-- BEGIN: PAGE SCRIPTS -->
-        <script src="../assets/demos/default/js/scripts/revo-slider/slider-4.js"></script>
-        <script src="../assets/plugins/isotope/isotope.pkgd.min.js"></script>
-        <script src="../assets/plugins/isotope/imagesloaded.pkgd.min.js"></script>
-        <script src="../assets/plugins/isotope/packery-mode.pkgd.min.js"></script>
-        <script src="../assets/plugins/ilightbox/js/jquery.requestAnimationFrame.js"></script>
-        <script src="../assets/plugins/ilightbox/js/jquery.mousewheel.js"></script>
-        <script src="../assets/plugins/ilightbox/js/ilightbox.packed.js"></script>
-        <script src="../assets/demos/default/js/scripts/pages/isotope-gallery.js"></script>
-        <script src="../assets/plugins/revo-slider/js/extensions/revolution.extension.parallax.min.js"></script>        
-        <script src="../assets/plugins/revo-slider/js/extensions/revolution.extension.kenburn.min.js"></script>
+        <script src="../../../assets/demos/default/js/scripts/revo-slider/slider-4.js"></script>
+        <script src="../../../assets/plugins/isotope/isotope.pkgd.min.js"></script>
+        <script src="../../../assets/plugins/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="../../../assets/plugins/isotope/packery-mode.pkgd.min.js"></script>
+        <script src="../../../assets/plugins/ilightbox/js/jquery.requestAnimationFrame.js"></script>
+        <script src="../../../assets/plugins/ilightbox/js/jquery.mousewheel.js"></script>
+        <script src="../../../assets/plugins/ilightbox/js/ilightbox.packed.js"></script>
+        <script src="../../../assets/demos/default/js/scripts/pages/isotope-gallery.js"></script>
+        <script src="../../../assets/plugins/revo-slider/js/extensions/revolution.extension.parallax.min.js"></script>        
+        <script src="../../../assets/plugins/revo-slider/js/extensions/revolution.extension.kenburn.min.js"></script>
         
         <!-- END: PAGE SCRIPTS -->
         <!-- END: LAYOUT/BASE/BOTTOM -->

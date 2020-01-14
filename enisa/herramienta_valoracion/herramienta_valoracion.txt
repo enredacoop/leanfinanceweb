@@ -1,0 +1,516 @@
+/***** Year 1 *****/
+/* Bloque A */
+var year_1_a0 = 0;
+var year_1_a1 = 0;
+var year_1_a2 = 0;
+var year_1_a3 = 0;
+var year_1_a4 = 0;
+var year_1_a5 = 0;
+var year_1_a6 = 0;
+var year_1_a7 = 0;
+var year_1_a8 = 0;
+var year_1_a9 = 0;
+var year_1_ra = 0;
+
+/* Bloque B */
+var year_1_b0 = 0;
+var year_1_b1 = 0;
+var year_1_b2 = 0;
+var year_1_rb = 0;
+
+/* Bloque C */
+var year_1_c0 = 0;
+var year_1_rc = 0;
+
+/* Bloque ANC */
+var year_1_anc_0 = 0;
+var year_1_anc_1 = 0;
+var year_1_anc_2 = 0;
+var year_1_anc_3 = 0;
+var year_1_anc_4 = 0;
+var year_1_anc_5 = 0;
+var year_1_anc_6 = 0;
+var year_1_r_anc = 0;
+
+/* Bloque AC */
+var year_1_ac_0 = 0;
+var year_1_ac_1 = 0;
+var year_1_ac_2 = 0;
+var year_1_ac_3 = 0;
+var year_1_ac_4 = 0;
+var year_1_ac_5 = 0;
+var year_1_ac_6 = 0;
+var year_1_r_ac = 0;
+var year_1_r_a = 0;
+
+var total_1_a = 0;
+
+/* Bloque PN */
+var year_1_pn_0 = 0;
+var year_1_pn_1 = 0;
+var year_1_pn_2 = 0;
+var year_1_pn_3 = 0;
+var year_1_pn_4 = 0;
+var year_1_pn_5 = 0;
+var year_1_r_pn = 0;
+
+/* Bloque PNC */
+var year_1_pnc_0 = 0;
+var year_1_pnc_1 = 0;
+var year_1_pnc_2 = 0;
+var year_1_pnc_3 = 0;
+var year_1_pnc_4 = 0;
+var year_1_pnc_5 = 0;
+var year_1_r_pnc = 0;
+
+/* Bloque PC */
+var year_1_pc_0 = 0;
+var year_1_pc_1 = 0;
+var year_1_pc_2 = 0;
+var year_1_pc_3 = 0;
+var year_1_pc_4 = 0;
+var year_1_pc_5 = 0;
+var year_1_pc_6 = 0;
+var year_1_pc_7 = 0;
+var year_1_r_pc = 0;
+
+var total_1_p = 0;
+
+
+/***** Year 2 *****/
+/* Bloque A */
+var year_2_a0 = 0;
+var year_2_a1 = 0;
+var year_2_a2 = 0;
+var year_2_a3 = 0;
+var year_2_a4 = 0;
+var year_2_a5 = 0;
+var year_2_a6 = 0;
+var year_2_a7 = 0;
+var year_2_a8 = 0;
+var year_2_a9 = 0;
+var year_2_ra = 0;
+
+/* Bloque B */
+var year_2_b0 = 0;
+var year_2_b1 = 0;
+var year_2_b2 = 0;
+var year_2_rb = 0;
+
+/* Bloque C */
+var year_2_c0 = 0;
+var year_2_rc = 0;
+
+/* Bloque ANC */
+var year_2_anc_0 = 0;
+var year_2_anc_1 = 0;
+var year_2_anc_2 = 0;
+var year_2_anc_3 = 0;
+var year_2_anc_4 = 0;
+var year_2_anc_5 = 0;
+var year_2_anc_6 = 0;
+var year_2_r_anc = 0;
+
+/* Bloque AC */
+var year_2_ac_0 = 0;
+var year_2_ac_1 = 0;
+var year_2_ac_2 = 0;
+var year_2_ac_3 = 0;
+var year_2_ac_4 = 0;
+var year_2_ac_5 = 0;
+var year_2_ac_6 = 0;
+var year_2_r_ac = 0;
+var year_2_r_a = 0;
+
+var total_2_a = 0;
+
+/* Bloque PN */
+var year_2_pn_0 = 0;
+var year_2_pn_1 = 0;
+var year_2_pn_2 = 0;
+var year_2_pn_3 = 0;
+var year_2_pn_4 = 0;
+var year_2_pn_5 = 0;
+var year_2_r_pn = 0;
+
+/* Bloque PNC */
+var year_2_pnc_0 = 0;
+var year_2_pnc_1 = 0;
+var year_2_pnc_2 = 0;
+var year_2_pnc_3 = 0;
+var year_2_pnc_4 = 0;
+var year_2_pnc_5 = 0;
+var year_2_r_pnc = 0;
+
+/* Bloque PC */
+var year_2_pc_0 = 0;
+var year_2_pc_1 = 0;
+var year_2_pc_2 = 0;
+var year_2_pc_3 = 0;
+var year_2_pc_4 = 0;
+var year_2_pc_5 = 0;
+var year_2_pc_6 = 0;
+var year_2_pc_7 = 0;
+var year_2_r_pc = 0;
+
+var total_2_p = 0;
+
+
+
+
+/************************************************************************************/
+
+
+
+
+$(function(){
+
+	$("table.responsive input").on("focusout", function() {
+
+		if( this.value != "" ){
+			var value = this.value;
+			var id = this.id;
+
+			/* Asignamos las variables */
+			assignValue(id, value);
+
+			/* Bloque A */
+			year_1_ra = parseFloat(year_1_a0) + parseFloat(year_1_a1) + parseFloat(year_1_a2) + parseFloat(year_1_a3) + parseFloat(year_1_a4) + parseFloat(year_1_a5) + parseFloat(year_1_a6)  + parseFloat(year_1_a7) + parseFloat(year_1_a8) + parseFloat(year_1_a9);
+			year_2_ra = parseFloat(year_2_a0) + parseFloat(year_2_a1) + parseFloat(year_2_a2) + parseFloat(year_2_a3) + parseFloat(year_2_a4) + parseFloat(year_2_a5) + parseFloat(year_2_a6)  + parseFloat(year_2_a7) + parseFloat(year_2_a8) + parseFloat(year_2_a9);
+			$( $("#year_1_ra")[0] ).val( year_1_ra.toFixed(2) );
+			//document.getElementById("year_1_ra").value = year_1_ra.toFixed(2);
+			$( $("#year_2_ra")[0] ).val( year_2_ra.toFixed(2) );
+
+			/* Bloque B */
+			year_1_rb = parseFloat(year_1_b0) + parseFloat(year_1_b1) + parseFloat(year_1_b2);
+			year_2_rb = parseFloat(year_2_b0) + parseFloat(year_2_b1) + parseFloat(year_2_b2);
+			$( $("#year_1_rb")[0] ).val( year_1_rb.toFixed(2) );
+			$( $("#year_2_rb")[0] ).val( year_2_rb.toFixed(2) );
+
+			/* Bloque C */
+			year_1_rc = parseFloat(year_1_ra) + parseFloat(year_1_rb) + parseFloat(year_1_c0);
+			year_2_rc = parseFloat(year_2_ra) + parseFloat(year_2_rb) + parseFloat(year_2_c0);
+			$( $("#year_1_rc")[0] ).val( year_1_rc.toFixed(2) );
+			$( $("#year_2_rc")[0] ).val( year_2_rc.toFixed(2) );
+
+			/* Bloque ANC */
+			year_1_r_anc = parseFloat(year_1_anc_0) + parseFloat(year_1_anc_1) + parseFloat(year_1_anc_2) + parseFloat(year_1_anc_3) + parseFloat(year_1_anc_4) + parseFloat(year_1_anc_5) + parseFloat(year_1_anc_6);
+			year_2_r_anc = parseFloat(year_2_anc_0) + parseFloat(year_2_anc_1) + parseFloat(year_2_anc_2) + parseFloat(year_2_anc_3) + parseFloat(year_2_anc_4) + parseFloat(year_2_anc_5) + parseFloat(year_2_anc_6);
+			$( $("#year_1_r_anc")[0] ).val( year_1_r_anc.toFixed(2) );
+			$( $("#year_2_r_anc")[0] ).val( year_2_r_anc.toFixed(2) );
+
+			/* Bloque AC */
+			year_1_r_ac = parseFloat(year_1_ac_0) + parseFloat(year_1_ac_1) + parseFloat(year_1_ac_2) + parseFloat(year_1_ac_3) + parseFloat(year_1_ac_4) + parseFloat(year_1_ac_5) + parseFloat(year_1_ac_6);
+			year_2_r_ac = parseFloat(year_2_ac_0) + parseFloat(year_2_ac_1) + parseFloat(year_2_ac_2) + parseFloat(year_2_ac_3) + parseFloat(year_2_ac_4) + parseFloat(year_2_ac_5) + parseFloat(year_2_ac_6);
+			$( $("#year_1_r_ac")[0] ).val( year_1_r_ac.toFixed(2) );
+			$( $("#year_2_r_ac")[0] ).val( year_2_r_ac.toFixed(2) );
+
+			/* TOTAL ANC + AC */
+			total_1_a = parseFloat(year_1_r_anc) + parseFloat(year_1_r_ac);
+			total_2_a = parseFloat(year_2_r_anc) + parseFloat(year_2_r_ac);
+			$( $("#total_1_a")[0] ).val( parseFloat(total_1_a).toFixed(2) );
+			$( $("#total_2_a")[0] ).val( parseFloat(total_2_a).toFixed(2) );
+
+			/* Bloque PN */
+			year_1_r_pn = parseFloat(year_1_pn_0) + parseFloat(year_1_pn_1) + parseFloat(year_1_pn_2) + parseFloat(year_1_pn_3) + parseFloat(year_1_pn_4) + parseFloat(year_1_pn_5);
+			year_2_r_pn = parseFloat(year_2_pn_0) + parseFloat(year_2_pn_1) + parseFloat(year_2_pn_2) + parseFloat(year_2_pn_3) + parseFloat(year_2_pn_4) + parseFloat(year_2_pn_5);
+			$( $("#year_1_r_pn")[0] ).val( year_1_r_pn.toFixed(2) );
+			$( $("#year_2_r_pn")[0] ).val( year_2_r_pn.toFixed(2) );
+
+			/* Bloque PNC */
+			year_1_r_pnc = parseFloat(year_1_pnc_0) + parseFloat(year_1_pnc_1) + parseFloat(year_1_pnc_2) + parseFloat(year_1_pnc_3) + parseFloat(year_1_pnc_4) + parseFloat(year_1_pnc_5);
+			year_2_r_pnc = parseFloat(year_2_pnc_0) + parseFloat(year_2_pnc_1) + parseFloat(year_2_pnc_2) + parseFloat(year_2_pnc_3) + parseFloat(year_2_pnc_4) + parseFloat(year_2_pnc_5);
+			$( $("#year_1_r_pnc")[0] ).val( year_1_r_pnc.toFixed(2) );
+			$( $("#year_2_r_pnc")[0] ).val( year_2_r_pnc.toFixed(2) );
+
+			/* Bloque PC */
+			year_1_r_pc = parseFloat(year_1_pc_0) + parseFloat(year_1_pc_1) + parseFloat(year_1_pc_2) + parseFloat(year_1_pc_3) + parseFloat(year_1_pc_4) + parseFloat(year_1_pc_5) + parseFloat(year_1_pc_6) + parseFloat(year_1_pc_7);
+			year_2_r_pc = parseFloat(year_2_pc_0) + parseFloat(year_2_pc_1) + parseFloat(year_2_pc_2) + parseFloat(year_2_pc_3) + parseFloat(year_2_pc_4) + parseFloat(year_2_pc_5) + parseFloat(year_2_pc_6) + parseFloat(year_2_pc_7);
+			$( $("#year_1_r_pc")[0] ).val( year_1_r_pc.toFixed(2) );
+			$( $("#year_2_r_pc")[0] ).val( year_2_r_pc.toFixed(2) );
+
+			/* TOTAL PN + PNC + PC */
+			total_1_p = parseFloat(year_1_r_pn) + parseFloat(year_1_r_pnc) + parseFloat(year_1_r_pc);
+			total_2_p = parseFloat(year_2_r_pn) + parseFloat(year_2_r_pnc) + parseFloat(year_2_r_pc);
+			$( $("#total_1_p")[0] ).val( parseFloat(total_1_p).toFixed(2) );
+			$( $("#total_2_p")[0] ).val( parseFloat(total_2_p).toFixed(2) );
+
+		}
+	});
+
+});
+
+/* Función para asignar valor a la variable correspondiente */
+function assignValue(id, value){
+	switch(id){
+		/**** Year 1 ****/
+			/* Bloque A */
+			case "year_1_a0": year_1_a0 = value; break;
+			case "year_1_a1": year_1_a1 = value; break;
+			case "year_1_a2": year_1_a2 = value; break;
+			case "year_1_a3": year_1_a3 = value; break;
+			case "year_1_a4": year_1_a4 = value; break;
+			case "year_1_a5": year_1_a5 = value; break;
+			case "year_1_a6": year_1_a6 = value; break;
+			case "year_1_a7": year_1_a7 = value; break;
+			case "year_1_a8": year_1_a8 = value; break;
+			case "year_1_a9": year_1_a9 = value; break;
+
+			/* Bloque B */
+			case "year_1_b0": year_1_b0 = value; break;
+			case "year_1_b1": year_1_b1 = value; break;
+			case "year_1_b2": year_1_b2 = value; break;
+
+			/* Bloque C */
+			case "year_1_c0": year_1_c0 = value; break;
+
+			/* ANC */
+			case "year_1_anc_0": year_1_anc_0 = value; break;
+			case "year_1_anc_1": year_1_anc_1 = value; break;
+			case "year_1_anc_2": year_1_anc_2 = value; break;
+			case "year_1_anc_3": year_1_anc_3 = value; break;
+			case "year_1_anc_4": year_1_anc_4 = value; break;
+			case "year_1_anc_5": year_1_anc_5 = value; break;
+			case "year_1_anc_6": year_1_anc_6 = value; break;
+
+			/* AC */
+			case "year_1_ac_0": year_1_ac_0 = value; break;
+			case "year_1_ac_1": year_1_ac_1 = value; break;
+			case "year_1_ac_2": year_1_ac_2 = value; break;
+			case "year_1_ac_3": year_1_ac_3 = value; break;
+			case "year_1_ac_4": year_1_ac_4 = value; break;
+			case "year_1_ac_5": year_1_ac_5 = value; break;
+			case "year_1_ac_6": year_1_ac_6 = value; break;
+
+			/* Bloque PN */
+			case "year_1_pn_0": year_1_pn_0 = value; break;
+			case "year_1_pn_1": year_1_pn_1 = value; break;
+			case "year_1_pn_2": year_1_pn_2 = value; break;
+			case "year_1_pn_3": year_1_pn_3 = value; break;
+			case "year_1_pn_4": year_1_pn_4 = value; break;
+			case "year_1_pn_5": year_1_pn_5 = value; break;
+
+			/* PNC */
+			case "year_1_pnc_0": year_1_pnc_0 = value; break;
+			case "year_1_pnc_1": year_1_pnc_1 = value; break;
+			case "year_1_pnc_2": year_1_pnc_2 = value; break;
+			case "year_1_pnc_3": year_1_pnc_3 = value; break;
+			case "year_1_pnc_4": year_1_pnc_4 = value; break;
+			case "year_1_pnc_5": year_1_pnc_5 = value; break;
+
+			/* Bloque PC */
+			case "year_1_pc_0": year_1_pc_0 = value; break;
+			case "year_1_pc_1": year_1_pc_1 = value; break;
+			case "year_1_pc_2": year_1_pc_2 = value; break;
+			case "year_1_pc_3": year_1_pc_3 = value; break;
+			case "year_1_pc_4": year_1_pc_4 = value; break;
+			case "year_1_pc_5": year_1_pc_5 = value; break;
+			case "year_1_pc_6": year_1_pc_6 = value; break;
+			case "year_1_pc_7": year_1_pc_7 = value; break;
+
+
+
+
+		/**** Year 2 ****/
+			/* Bloque A */
+			case "year_2_a0": year_2_a0 = value; break;
+			case "year_2_a1": year_2_a1 = value; break;
+			case "year_2_a2": year_2_a2 = value; break;
+			case "year_2_a3": year_2_a3 = value; break;
+			case "year_2_a4": year_2_a4 = value; break;
+			case "year_2_a5": year_2_a5 = value; break;
+			case "year_2_a6": year_2_a6 = value; break;
+			case "year_2_a7": year_2_a7 = value; break;
+			case "year_2_a8": year_2_a8 = value; break;
+			case "year_2_a9": year_2_a9 = value; break;
+
+			/* Bloque B */
+			case "year_2_b0": year_2_b0 = value; break;
+			case "year_2_b1": year_2_b1 = value; break;
+			case "year_2_b2": year_2_b2 = value; break;
+
+			/* Bloque C */
+			case "year_2_c0": year_2_c0 = value; break;
+
+			/* ANC */
+			case "year_2_anc_0": year_2_anc_0 = value; break;
+			case "year_2_anc_1": year_2_anc_1 = value; break;
+			case "year_2_anc_2": year_2_anc_2 = value; break;
+			case "year_2_anc_3": year_2_anc_3 = value; break;
+			case "year_2_anc_4": year_2_anc_4 = value; break;
+			case "year_2_anc_5": year_2_anc_5 = value; break;
+			case "year_2_anc_6": year_2_anc_6 = value; break;
+
+			/* AC */
+			case "year_2_ac_0": year_2_ac_0 = value; break;
+			case "year_2_ac_1": year_2_ac_1 = value; break;
+			case "year_2_ac_2": year_2_ac_2 = value; break;
+			case "year_2_ac_3": year_2_ac_3 = value; break;
+			case "year_2_ac_4": year_2_ac_4 = value; break;
+			case "year_2_ac_5": year_2_ac_5 = value; break;
+			case "year_2_ac_6": year_2_ac_6 = value; break;
+
+			/* Bloque PN */
+			case "year_2_pn_0": year_2_pn_0 = value; break;
+			case "year_2_pn_1": year_2_pn_1 = value; break;
+			case "year_2_pn_2": year_2_pn_2 = value; break;
+			case "year_2_pn_3": year_2_pn_3 = value; break;
+			case "year_2_pn_4": year_2_pn_4 = value; break;
+			case "year_2_pn_5": year_2_pn_5 = value; break;
+
+			/* PNC */
+			case "year_2_pnc_0": year_2_pnc_0 = value; break;
+			case "year_2_pnc_1": year_2_pnc_1 = value; break;
+			case "year_2_pnc_2": year_2_pnc_2 = value; break;
+			case "year_2_pnc_3": year_2_pnc_3 = value; break;
+			case "year_2_pnc_4": year_2_pnc_4 = value; break;
+			case "year_2_pnc_5": year_2_pnc_5 = value; break;
+
+			/* Bloque PC */
+			case "year_2_pc_0": year_2_pc_0 = value; break;
+			case "year_2_pc_1": year_2_pc_1 = value; break;
+			case "year_2_pc_2": year_2_pc_2 = value; break;
+			case "year_2_pc_3": year_2_pc_3 = value; break;
+			case "year_2_pc_4": year_2_pc_4 = value; break;
+			case "year_2_pc_5": year_2_pc_5 = value; break;
+			case "year_2_pc_6": year_2_pc_6 = value; break;
+			case "year_2_pc_7": year_2_pc_7 = value; break;
+	}
+}
+
+
+/* Función para asignar valores por defecto antes de enviar formulario */
+function evalueForm(){
+
+		/**** Year 1 ****/
+		/* Bloque A */
+		if( year_1_a0 == 0 ){ $( $("#year_1_a0")[0] ).val( 0.00 ); }
+		if( year_1_a1 == 0 ){ $( $("#year_1_a1")[0] ).val( 0.00 ); }
+		if( year_1_a2 == 0 ){ $( $("#year_1_a2")[0] ).val( 0.00 ); }
+		if( year_1_a3 == 0 ){ $( $("#year_1_a3")[0] ).val( 0.00 ); }
+		if( year_1_a4 == 0 ){ $( $("#year_1_a4")[0] ).val( 0.00 ); }
+		if( year_1_a5 == 0 ){ $( $("#year_1_a5")[0] ).val( 0.00 ); }
+		if( year_1_a6 == 0 ){ $( $("#year_1_a6")[0] ).val( 0.00 ); }
+		if( year_1_a7 == 0 ){ $( $("#year_1_a7")[0] ).val( 0.00 ); }
+		if( year_1_a8 == 0 ){ $( $("#year_1_a8")[0] ).val( 0.00 ); }
+		if( year_1_a9 == 0 ){ $( $("#year_1_a9")[0] ).val( 0.00 ); }
+
+		/* Bloque B */
+		if( year_1_b0 == 0 ){ $( $("#year_1_b0")[0] ).val( 0.00 ); }
+		if( year_1_b1 == 0 ){ $( $("#year_1_b1")[0] ).val( 0.00 ); }
+		if( year_1_b2 == 0 ){ $( $("#year_1_b2")[0] ).val( 0.00 ); }
+
+		/* Bloque C */
+		if( year_1_c0 == 0 ){ $( $("#year_1_c0")[0] ).val( 0.00 ); }
+
+		/* ANC */
+		if( year_1_anc_0 == 0 ){ $( $("#year_1_anc_0")[0] ).val( 0.00); }
+		if( year_1_anc_1 == 0 ){ $( $("#year_1_anc_1")[0] ).val( 0.00); }
+		if( year_1_anc_2 == 0 ){ $( $("#year_1_anc_2")[0] ).val( 0.00); }
+		if( year_1_anc_3 == 0 ){ $( $("#year_1_anc_3")[0] ).val( 0.00); }
+		if( year_1_anc_4 == 0 ){ $( $("#year_1_anc_4")[0] ).val( 0.00); }
+		if( year_1_anc_5 == 0 ){ $( $("#year_1_anc_5")[0] ).val( 0.00); }
+		if( year_1_anc_6 == 0 ){ $( $("#year_1_anc_6")[0] ).val( 0.00); }
+
+		/* AC */
+		if( year_1_ac_0 == 0 ){ $( $("#year_1_ac_0")[0] ).val( 0.00); }
+		if( year_1_ac_1 == 0 ){ $( $("#year_1_ac_1")[0] ).val( 0.00); }
+		if( year_1_ac_2 == 0 ){ $( $("#year_1_ac_2")[0] ).val( 0.00); }
+		if( year_1_ac_3 == 0 ){ $( $("#year_1_ac_3")[0] ).val( 0.00); }
+		if( year_1_ac_4 == 0 ){ $( $("#year_1_ac_4")[0] ).val( 0.00); }
+		if( year_1_ac_5 == 0 ){ $( $("#year_1_ac_5")[0] ).val( 0.00); }
+		if( year_1_ac_6 == 0 ){ $( $("#year_1_ac_6")[0] ).val( 0.00); }
+
+		/* Bloque PN */
+		if( year_1_pn_0 == 0 ){ $( $("#year_1_pn_0")[0] ).val( 0.00); }
+		if( year_1_pn_1 == 0 ){ $( $("#year_1_pn_1")[0] ).val( 0.00); }
+		if( year_1_pn_2 == 0 ){ $( $("#year_1_pn_2")[0] ).val( 0.00); }
+		if( year_1_pn_3 == 0 ){ $( $("#year_1_pn_3")[0] ).val( 0.00); }
+		if( year_1_pn_4 == 0 ){ $( $("#year_1_pn_4")[0] ).val( 0.00); }
+		if( year_1_pn_5 == 0 ){ $( $("#year_1_pn_5")[0] ).val( 0.00); }
+
+		/* PNC */
+		if( year_1_pnc_0 == 0 ){ $( $("#year_1_pnc_0")[0] ).val( 0.00); }
+		if( year_1_pnc_1 == 0 ){ $( $("#year_1_pnc_1")[0] ).val( 0.00); }
+		if( year_1_pnc_2 == 0 ){ $( $("#year_1_pnc_2")[0] ).val( 0.00); }
+		if( year_1_pnc_3 == 0 ){ $( $("#year_1_pnc_3")[0] ).val( 0.00); }
+		if( year_1_pnc_4 == 0 ){ $( $("#year_1_pnc_4")[0] ).val( 0.00); }
+		if( year_1_pnc_5 == 0 ){ $( $("#year_1_pnc_5")[0] ).val( 0.00); }
+
+		/* Bloque PC */
+		if( year_1_pc_0 == 0 ){ $( $("#year_1_pc_0")[0] ).val( 0.00 ); }
+		if( year_1_pc_1 == 0 ){ $( $("#year_1_pc_1")[0] ).val( 0.00 ); }
+		if( year_1_pc_2 == 0 ){ $( $("#year_1_pc_2")[0] ).val( 0.00 ); }
+		if( year_1_pc_3 == 0 ){ $( $("#year_1_pc_3")[0] ).val( 0.00 ); }
+		if( year_1_pc_4 == 0 ){ $( $("#year_1_pc_4")[0] ).val( 0.00 ); }
+		if( year_1_pc_5 == 0 ){ $( $("#year_1_pc_5")[0] ).val( 0.00 ); }
+		if( year_1_pc_6 == 0 ){ $( $("#year_1_pc_6")[0] ).val( 0.00 ); }
+		if( year_1_pc_7 == 0 ){ $( $("#year_1_pc_7")[0] ).val( 0.00 ); }
+
+
+		/**** Year 2 ****/
+		/* Bloque A */
+		if( year_2_a0 == 0 ){ $( $("#year_2_a0")[0] ).val( 0.00 ); }
+		if( year_2_a1 == 0 ){ $( $("#year_2_a1")[0] ).val( 0.00 ); }
+		if( year_2_a2 == 0 ){ $( $("#year_2_a2")[0] ).val( 0.00 ); }
+		if( year_2_a3 == 0 ){ $( $("#year_2_a3")[0] ).val( 0.00 ); }
+		if( year_2_a4 == 0 ){ $( $("#year_2_a4")[0] ).val( 0.00 ); }
+		if( year_2_a5 == 0 ){ $( $("#year_2_a5")[0] ).val( 0.00 ); }
+		if( year_2_a6 == 0 ){ $( $("#year_2_a6")[0] ).val( 0.00 ); }
+		if( year_2_a7 == 0 ){ $( $("#year_2_a7")[0] ).val( 0.00 ); }
+		if( year_2_a8 == 0 ){ $( $("#year_2_a8")[0] ).val( 0.00 ); }
+		if( year_2_a9 == 0 ){ $( $("#year_2_a9")[0] ).val( 0.00 ); }
+
+		/* Bloque B */
+		if( year_2_b0 == 0 ){ $( $("#year_2_b0")[0] ).val( 0.00 ); }
+		if( year_2_b1 == 0 ){ $( $("#year_2_b1")[0] ).val( 0.00 ); }
+		if( year_2_b2 == 0 ){ $( $("#year_2_b2")[0] ).val( 0.00 ); }
+
+		/* Bloque C */
+		if( year_2_c0 == 0 ){ $( $("#year_2_c0")[0] ).val( 0.00 ); }
+
+		/* ANC */
+		if( year_2_anc_0 == 0 ){ $( $("#year_2_anc_0")[0] ).val( 0.00); }
+		if( year_2_anc_1 == 0 ){ $( $("#year_2_anc_1")[0] ).val( 0.00); }
+		if( year_2_anc_2 == 0 ){ $( $("#year_2_anc_2")[0] ).val( 0.00); }
+		if( year_2_anc_3 == 0 ){ $( $("#year_2_anc_3")[0] ).val( 0.00); }
+		if( year_2_anc_4 == 0 ){ $( $("#year_2_anc_4")[0] ).val( 0.00); }
+		if( year_2_anc_5 == 0 ){ $( $("#year_2_anc_5")[0] ).val( 0.00); }
+		if( year_2_anc_6 == 0 ){ $( $("#year_2_anc_6")[0] ).val( 0.00); }
+
+		/* AC */
+		if( year_2_ac_0 == 0 ){ $( $("#year_2_ac_0")[0] ).val( 0.00); }
+		if( year_2_ac_1 == 0 ){ $( $("#year_2_ac_1")[0] ).val( 0.00); }
+		if( year_2_ac_2 == 0 ){ $( $("#year_2_ac_2")[0] ).val( 0.00); }
+		if( year_2_ac_3 == 0 ){ $( $("#year_2_ac_3")[0] ).val( 0.00); }
+		if( year_2_ac_4 == 0 ){ $( $("#year_2_ac_4")[0] ).val( 0.00); }
+		if( year_2_ac_5 == 0 ){ $( $("#year_2_ac_5")[0] ).val( 0.00); }
+		if( year_2_ac_6 == 0 ){ $( $("#year_2_ac_6")[0] ).val( 0.00); }
+
+		/* Bloque PN */
+		if( year_2_pn_0 == 0 ){ $( $("#year_2_pn_0")[0] ).val( 0.00); }
+		if( year_2_pn_1 == 0 ){ $( $("#year_2_pn_1")[0] ).val( 0.00); }
+		if( year_2_pn_2 == 0 ){ $( $("#year_2_pn_2")[0] ).val( 0.00); }
+		if( year_2_pn_3 == 0 ){ $( $("#year_2_pn_3")[0] ).val( 0.00); }
+		if( year_2_pn_4 == 0 ){ $( $("#year_2_pn_4")[0] ).val( 0.00); }
+		if( year_2_pn_5 == 0 ){ $( $("#year_2_pn_5")[0] ).val( 0.00); }
+
+		/* PNC */
+		if( year_2_pnc_0 == 0 ){ $( $("#year_2_pnc_0")[0] ).val( 0.00); }
+		if( year_2_pnc_1 == 0 ){ $( $("#year_2_pnc_1")[0] ).val( 0.00); }
+		if( year_2_pnc_2 == 0 ){ $( $("#year_2_pnc_2")[0] ).val( 0.00); }
+		if( year_2_pnc_3 == 0 ){ $( $("#year_2_pnc_3")[0] ).val( 0.00); }
+		if( year_2_pnc_4 == 0 ){ $( $("#year_2_pnc_4")[0] ).val( 0.00); }
+		if( year_2_pnc_5 == 0 ){ $( $("#year_2_pnc_5")[0] ).val( 0.00); }
+
+		/* Bloque PC */
+		if( year_2_pc_0 == 0 ){ $( $("#year_2_pc_0")[0] ).val( 0.00 ); }
+		if( year_2_pc_1 == 0 ){ $( $("#year_2_pc_1")[0] ).val( 0.00 ); }
+		if( year_2_pc_2 == 0 ){ $( $("#year_2_pc_2")[0] ).val( 0.00 ); }
+		if( year_2_pc_3 == 0 ){ $( $("#year_2_pc_3")[0] ).val( 0.00 ); }
+		if( year_2_pc_4 == 0 ){ $( $("#year_2_pc_4")[0] ).val( 0.00 ); }
+		if( year_2_pc_5 == 0 ){ $( $("#year_2_pc_5")[0] ).val( 0.00 ); }
+		if( year_2_pc_6 == 0 ){ $( $("#year_2_pc_6")[0] ).val( 0.00 ); }
+		if( year_2_pc_7 == 0 ){ $( $("#year_2_pc_7")[0] ).val( 0.00 ); }
+
+}

@@ -15,25 +15,32 @@ function sendEmail() {
 	mensaje = $("#form-message").val();
 	body = nombre + " ha rellenado el formulario de contacto de la web, los datos son los siguientes.<br><br><p><strong>Nombre:</strong> " + nombre + "</p><p><strong>Email:</strong> " + email + "</p><p><strong>Teléfono:</strong> " + telefono + "</p><br><p><strong>Motivo de la consulta:</strong><br> " + mensaje + "</p>";
 
-	var template_params = {
+	if( nombre=="" || email=="" || telefono=="" || mensaje=="" ){
+		$("#alert-ko").removeClass("d-none");
+	}else{
+
+		var template_params = {
 	   "reply_to": email,
 	   "message_html": body
-	}
+		}
 
-	var service_id = "default_service";
-	var template_id = "plantilla_contacto";
+		var service_id = "default_service";
+		var template_id = "plantilla_contacto";
 
-	emailjs.send(service_id, template_id, template_params, "user_0t6pKfOxfc5URBHNxCPaU")
-		.then(function(response) {
-       console.log('SUCCESS!', response.status, response.text);
-      $("#alert-ok").removeClass("d-none");
-			document.getElementById("form-leanfinance").reset();
-			// Redireccionamos a la página de Gracias
-			window.location = "http://leanfinance.es/gracias";
-    }, function(error) {
-       console.log('FAILED...', error);
-      $("#alert-ko").removeClass("d-none");
-    });
+		emailjs.send(service_id, template_id, template_params, "user_0t6pKfOxfc5URBHNxCPaU")
+			.then(function(response) {
+	       console.log('SUCCESS!', response.status, response.text);
+	      $("#alert-ok").removeClass("d-none");
+				document.getElementById("form-leanfinance").reset();
+				// Redireccionamos a la página de Gracias
+				window.location = "http://leanfinance.es/gracias";
+	    }, function(error) {
+	       console.log('FAILED...', error);
+	      $("#alert-ko").removeClass("d-none");
+	   });
+			
+	} /* end else */
+	
 }
 
 function sendEmailEnisa() {

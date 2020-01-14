@@ -58,7 +58,7 @@ Follow: http://www.twitter.com/themehats
 	<link href="../assets/demos/enisa/css/plugins.css" rel="stylesheet" type="text/css"/>
 	<link href="../assets/demos/enisa/css/components.css" id="style_components" rel="stylesheet" type="text/css"/>
 	<!--link href="../assets/demos/enisa/css/themes/default.css" rel="stylesheet" id="style_theme" type="text/css"/-->
-	<link href="../assets/demos/enisa/css/custom.css?v2.3" rel="stylesheet" type="text/css"/>
+	<link href="../assets/demos/enisa/css/custom.css?v2.4" rel="stylesheet" type="text/css"/>
 	<!-- END THEME STYLES -->
 
 	<link rel="shortcut icon" href="favicon.ico"/>
@@ -155,34 +155,17 @@ Follow: http://www.twitter.com/themehats
 					<div class="tp-banner rev_slider" data-version="5.0">
 						<ul>
 							<!--BEGIN: SLIDE #1 -->
-							<li data-transition="fade" data-slotamount="1" data-masterspeed="1000">	<!--../assets/base/img/content/backgrounds/bg-32.jpg-->		
+							<li data-transition="fade" data-slotamount="1" data-masterspeed="300">	<!--../assets/base/img/content/backgrounds/bg-32.jpg-->		
 								<img 
 									alt="" 
-									src="../assets/base/img/content/persons/leanfinance_4_custom.jpg"
+									src="../assets/base/img/content/persons/enisa_v3.jpg"
 									data-bgposition="center center" 
 									data-bgfit="cover" 
 									data-bgrepeat="no-repeat"
 								>	
 
 								<!--BEGIN: MAIN TITLE -->
-								<div class="tp-caption customin customout"  
-									data-x="center" 
-									data-y="center"
-									data-hoffset="0" 
-									data-voffset="-70"
-
-									data-speed="500" 
-									data-start="1000" 
-									data-transform_in="x:0;y:0;z:0;rotationX:0.5;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;s:500;e:Back.easeInOut;" 
-									data-transform_out="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;s:600;e:Back.easeInOut;" 
-									
-									data-splitin="none" 
-									data-splitout="none" 
-									data-elementdelay="0.1" 
-									data-endelementdelay="0.1" 
-									data-endspeed="600" 
-
-									>
+								<div class="tp-caption customin customout">
 								</div>
 
 
@@ -199,13 +182,13 @@ Follow: http://www.twitter.com/themehats
 										
 									<form id="form-leanfinance-enisa" class="form-inline" action="" onsubmit="sendEmailEnisa(); return false;">
 										<div class="form-group">
-							    			<input type="text" id="form-name" class="form-control input-lg c-theme c-square " placeholder="Nombre">
+							    			<input type="text" id="form-name" class="form-control input-lg c-theme c-square " placeholder="Nombre" required>
 							  			</div>
 							  			<div class="form-group">
-							    			<input type="email" id="form-email" class="form-control input-lg c-theme c-square " placeholder="Email">
+							    			<input type="email" id="form-email" class="form-control input-lg c-theme c-square " placeholder="Email" required>
 							  			</div>
 							  			<div class="form-group">
-							    			<input type="text" id="form-phone" class="form-control input-lg c-theme c-square " placeholder="Teléfono">
+							    			<input type="text" id="form-phone" class="form-control input-lg c-theme c-square " placeholder="Teléfono" required>
 							  			</div>
 							  			<button type="submit" class="btn btn-lg btn-primary c-btn-uppercase c-btn-square c-btn-bold margin-mobile">Lo hacemos por ti</button>
 									</form>
@@ -213,24 +196,7 @@ Follow: http://www.twitter.com/themehats
 								<!--END -->
 
 								<!--BEGIN: SUB TITLE -->
-								<div class="tp-caption customin customout"  
-									data-x="center" 
-									data-y="center"
-									data-hoffset="0" 
-									data-voffset="10"
-
-									data-speed="500" 
-									data-start="1500" 
-									data-transform_in="x:0;y:0;z:0;rotationX:0.5;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;s:500;e:Back.easeInOut;" 
-									data-transform_out="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;s:600;e:Back.easeInOut;" 
-									
-									data-splitin="none" 
-									data-splitout="none" 
-									data-elementdelay="0.1" 
-									data-endelementdelay="0.1" 
-									data-endspeed="600" 
-
-									>
+								<div class="tp-caption customin customout">
 									<!--p class="c-font-20 c-line-height-28 c-font-white c-opacity-07 c-font-thin c-center c-sub-title c-enisa-subtitle">
 										Préstamos participativos para financiar tu empresa por 40 millones de euros al año.<br>No empieces a devolver hasta los 5 años.
 									</p-->
@@ -284,11 +250,13 @@ Follow: http://www.twitter.com/themehats
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-6">
-					<div class="c-content-services-6-item wow fadeInUp" data-wow-delay="0.4s">
-						<div class="c-content-services-6-item-icon c-content-line-icon c-theme c-icon-18 c-caption-image"></div>
-						<h3 class="c-content-services-6-item-title">TECNOLOGÍA Y FINANZAS</h3>
-						<p class="c-content-services-6-item-desc">Con nuestra herramienta estudiamos la probabilidad de éxito de tu proyecto en base a criterios económico-financieros.</p>
-					</div>
+					<a href="herramienta_valoracion/">
+						<div class="c-content-services-6-item wow fadeInUp bg-primary-nc" data-wow-delay="0.4s">
+							<div class="c-content-services-6-item-icon c-content-line-icon c-theme c-icon-18 c-caption-image icon-white"></div>
+							<h3 class="c-content-services-6-item-title color-white">TECNOLOGÍA Y FINANZAS</h3>
+							<p class="c-content-services-6-item-desc color-white">Con nuestra herramienta estudiamos la probabilidad de éxito de tu proyecto en base a criterios económico-financieros.</p>
+						</div>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -673,7 +641,7 @@ Follow: http://www.twitter.com/themehats
 					<p>
 						Lean Finance, S.L.U.<br>
 						Avenida República Argentina, 25, Planta 9, 41011, Sevilla, España.<br>
-						Teléfono: <a href="tel:+34688920182">688 92 01 82</a><br>
+						Teléfono: <a href="tel:+34955254723">955 25 47 23</a><br>
 						Email: <a href="mailto:info@leanfinance.es">info@leanfinance.es</a><br>
 					</p>
 					<br>
